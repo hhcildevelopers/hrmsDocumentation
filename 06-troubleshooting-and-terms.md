@@ -17,7 +17,8 @@
 | Outside geofence near the edge | Policy pin/radius and the phone's distance **plus accuracy**. | Move farther inside; if site setup is wrong, HR must create a reviewed new policy version. |
 | Map or search unavailable | Internet and Google key/service configuration. | Admin may enter verified coordinates manually; employee can still read duty/punch if location service works. A map is optional guidance. |
 | Punch saved but not confirmed | Offline/uncertain/waiting status in **Punches**. | Reconnect, sync/check result, and escalate if unresolved. Do not submit repeated new punches. |
-| “Another device is enrolled” | Employee's original browser/device. | Follow HHCIL-approved device-replacement process; do not create duplicate accounts. |
+| “Use this phone for attendance” | A different phone is currently selected for punches. | First sync saved punches on the old phone if available, then switch explicitly on the new phone. Server history remains readable. |
+| “Phone-change limit reached” | The employee's used count reached the configured limit. | HR/Super Admin reviews the case and can reset the count with a mandatory reason. Do not create a duplicate employee account. |
 | “Code already exists” | Existing or archived client/site/post/employee code. | Use the correct existing record or a new approved code; do not append random characters to hide a duplicate. |
 | A change is blocked by published shifts | Future roster depends on the employee/site/post/assignment. | Revise/cancel affected shifts with a reason first, then repeat the change. |
 

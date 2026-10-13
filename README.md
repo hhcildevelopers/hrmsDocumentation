@@ -42,4 +42,4 @@ A user account, employee profile, site assignment, and published shift are **fou
 
 Have an HHCIL owner approve the site address, duty-point pin, radius and accuracy, site timezone, shift rules, roster approver, employee notice, and offline-review procedure. Test punch-in/out with a real phone at the actual gate or post. A map preview, desktop location, or training example is not enough.
 
-**Handbook version:** current repository features through Phase 3 geofenced attendance and the admin Google geofence picker (12 October 2026). HHCIL should review role names, support contacts, Hindi wording, and pilot policy values before publishing this handbook to end users.
+**Handbook version:** current repository features through Phase 3.5 attendance-phone switching and the admin Google geofence picker (13 October 2026). HHCIL should review role names, support contacts, Hindi wording, and pilot policy values before publishing this handbook to end users.

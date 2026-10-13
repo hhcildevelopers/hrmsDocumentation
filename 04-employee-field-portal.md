@@ -8,7 +8,7 @@ This page is for employees and field officers marking **their own** attendance. 
 
 - **Home** shows the active duty first (including a night shift that started yesterday), otherwise a punchable duty or your next duty. It shows site, post, address, local time, status, and the main punch button above the map.
 - **Shifts** lists upcoming duties in order and past duties separately. Past duties have no punch button. If you think a shift is missing, tap **Refresh**, then contact your supervisor.
-- **Punches** shows attendance sessions plus punches saved on this phone and their decisions. This is where you check whether a punch is really confirmed.
+- **Punches** shows server attendance sessions, server review decisions, and punches saved on this phone. Choose a month and tap **Show history** to retrieve older server records. A saved-only punch on a different phone cannot appear until that phone syncs it.
 
 If Home says **Punch in opens at …**, wait until that time. If it says the shift can no longer be punched, contact the supervisor. Do not change your phone clock; the server checks the actual window. For a night shift, follow the date/time shown on the duty card, not just today's date.
 
@@ -26,6 +26,14 @@ Read the site name, post, address, and start time. Tap **Check my location** onl
 4. If your punch-out window has closed, tell your supervisor. An authorized person can record an **exception punch-out** with a reason; it will be marked as an exception, not as a GPS-confirmed punch-out.
 
 The phone's GPS uncertainty matters. Example: a site requires **50 m or better**, but the phone reports **138 m**. The app will tell you to move to an open area and retry. Even a 30 m reading can fail near the edge of the site because the server adds the reported uncertainty to the distance from the center. Do not use a different person's account or ask someone else to punch for you.
+
+## Using another phone
+
+Sign in normally. You can still see your published duties, confirmed attendance, and server review results. To punch from this phone, read the **Use this phone for attendance** card. It shows how many changes remain. The first phone enrollment is free; signing in again on the same phone does not use an allowance. HHCIL currently allows **three** changes unless a Super Administrator changes the App Configuration policy.
+
+Before you tap **Use this phone for attendance**, sync any punches saved only on the old phone. They do not move to the new phone. Signing in on the old phone ends your login on this one, so return and sign in here afterward. If the old phone is lost or its saved punch cannot be recovered, tell your supervisor and provide the shift and approximate time; do not claim the missing punch was confirmed. If your change limit is reached, ask HR to review and reset your used count with a reason. A reset does not itself switch phones.
+
+You may switch during an active duty. The server keeps the same attendance session, but you must still obtain a new GPS fix at the site for punch-out. The previous phone stops being eligible for further punches and cannot send its unsynced evidence after the switch. This web-browser phone identifier is an operational control, not proof of who physically held the phone.
 
 ## If internet is unavailable
 
@@ -50,7 +58,7 @@ Do not tell your supervisor “I punched successfully” if the phone says saved
 - **GPS accuracy too weak:** move to a safe, open area **within the site**, wait for a better fix, and tap **Check again** or retry the punch. Do not cross a restricted area to improve GPS.
 - **Outside boundary:** verify the duty site and enter the approved reporting area; if the configured pin/radius is wrong, ask the supervisor to escalate to HR. Do not change coordinates yourself.
 - **No fresh position / timeout:** check that location services are enabled and try again. HTTPS is required for location outside local development.
-- **Different phone/browser:** device enrollment may block silent switching. Ask the administrator for the approved recovery procedure; creating another user is not the solution.
+- **Different phone/browser:** sign in, check the allowance, and use **Use this phone for attendance** after syncing old-phone evidence if possible. If the allowance is exhausted or evidence is missing, ask HR or your supervisor; creating another user is not the solution.
 - **No duty / wrong duty:** ask the planner to check profile link, assignment, policy, and **published** roster. A draft shift is not punchable.
 
 ## Privacy and current limit
