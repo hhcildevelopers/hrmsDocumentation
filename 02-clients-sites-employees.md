@@ -69,7 +69,13 @@ Go to **Employees → Create employee**. This creates an HR profile, **not** a l
 | Joining date | `2026-10-01` | Actual calendar date in the date picker (YYYY-MM-DD). |
 | Portal account | `Asha Patel (guard_1042)` | Optional existing active Employee/Field Officer account. Link the correct person; this does not change their role. |
 
-If the employee needs the field portal, first create the **User** under Users, then link it here or on the employee detail page. Do not create a second account/profile because the first is hard to find. A user-kind value of `employee` alone does not create or link a profile. An inactive or terminated employee must not be scheduled as an active guard.
+If the employee needs the Field Portal, save their profile, open **View → Profile → Portal account**, then choose **Create Employee login**. HR or Super Administrator with employee-update permission can do this. Save any pending profile edits first. The account is linked immediately; share the displayed Employee Code and temporary password securely. The employee must change the password at their first sign-in. You do not need to choose a username or role.
+
+If the employee already has an account, select it from **Available Employee or Field Officer account**, then **Save employee**. Only active, unlinked accounts assigned to the currently selected company appear. An account linked to any other employee, including an archived employee, cannot be reused here. The current link is displayed separately. Changing/unlinking it asks for confirmation and ends the affected accounts' sessions.
+
+Example: while working in **HHCP**, an account linked to an **HHCIL** employee will not appear. If an existing unlinked account is missing, ask Super Administrator to choose its company in **Users → Manage → Employee account company**. A staff Field Officer also needs a grant for the selected company. Do not create duplicate accounts just because a name is missing. If account creation succeeded but the temporary password was lost, refresh this profile and ask Super Administrator to reset the linked user's password.
+
+For a company transfer, use the employee transfer workflow; do not unlink/relink to move an employee between companies. An inactive or terminated employee must not be scheduled as an active guard.
 
 ## Assign the employee to a site/post
 

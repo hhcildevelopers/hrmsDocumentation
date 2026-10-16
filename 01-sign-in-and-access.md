@@ -4,7 +4,7 @@
 
 ## Sign in safely
 
-Use the official portal link supplied by HHCIL. Do not use a link sent by an unknown person. An administrator signs in on the **admin web** portal; employees and field officers performing punches use the **field attendance** portal. Your username is the account's **Username**, which may differ from the employee code on your profile.
+Use the official portal link supplied by HHCIL. An administrator signs in on the **Admin Portal** with their username. Employees can sign in on the **Field Portal** with their Employee Code or username and password. A linked Client Portal account can use its Client Code or username and password. An unlinked Field Officer uses their username. Codes do not replace passwords.
 
 If an administrator gives you a temporary password, sign in and complete **Create a secure password** before any other task. Enter the temporary password in **Current/Temporary password**, then a new password twice. The new password must have at least **12 characters**, uppercase and lowercase letters, a number, and a symbol. It must not contain your username or be the same as the current password. Example of the *format only*: `River!Cloud42S`; **do not use this published example as your password**. Never share your password or send it in a chat group.
 
@@ -14,6 +14,8 @@ One account has one active session. Logging in elsewhere can end an earlier sess
 
 Open **Users → Create user**. This operation requires Super Administrator access.
 
+HR can instead create a fixed Employee login from a saved employee's **Profile → Portal account → Create Employee login**. This does not grant HR access to general user administration, role changes or password resets.
+
 | Field | Good training example | How to fill it |
 | --- | --- | --- |
 | Username | `guard_1042` | Unique sign-in name, 3–80 characters: letters, numbers, dot, underscore, or hyphen. Avoid spaces. This is not automatically the employee code. |
@@ -21,6 +23,9 @@ Open **Users → Create user**. This operation requires Super Administrator acce
 | Email (optional) | `asha.patel@example.com` | A real, working address if HHCIL uses it; otherwise leave blank. Do not type `N/A` into an email field. |
 | User kind | `employee` | Choose `staff` for central staff, `employee` for a worker/field-officer field account, or `client` for a client contact. This choice does **not** create an employee profile. |
 | Roles | `Employee` | Select at least one appropriate active role. Prefer the minimum access needed. |
+| Employee account company | `Hitech Human Capital Pvt Ltd` | Required for Employee-kind accounts. Choose the company where HR will link this user to an employee. The user cannot sign in until linked. |
+
+Existing unlinked Employee accounts may have no company assigned. Open **Users → Manage → Employee account company**, choose an active company, and save. Linked accounts change company through employee transfer. Non-Super staff instead require **Company access** grants; this is a separate setting.
 
 For a field officer who must both punch for their own duty **and** review granted sites in the admin portal, use a **staff-kind** account with the **Field Officer** role, link that account to an active employee profile, grant the relevant sites, and give only the needed feature permissions. The field portal accepts Field Officer-role accounts; site-level attendance review specifically requires a staff-kind Field Officer with the appropriate grant and approval permission. A field officer who only uses their own field duties can have an employee-kind account, but that kind does not grant supervisor review access. Confirm HHCIL's intended responsibilities before choosing the kind. For a client user, choose **client-kind** and the **Client User** role; grant access to specific sites separately. Do not give everyone the Super Administrator role to fix a missing menu.
 
