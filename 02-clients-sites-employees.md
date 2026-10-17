@@ -14,7 +14,9 @@ Go to **Clients → Create client**.
 | Client name | `Example Retail Pvt Ltd` | Short name operators recognise, 2–150 characters. |
 | Legal name | `Example Retail Private Limited` | Optional registered name; do not put the contact person's name here. |
 
-Open the saved client and choose **Add contact**. Enter a person's name (`Neha Shah`), optional designation (`Regional Facilities Manager`), optional valid email (`neha@example.com`), optional mobile, and tick **Primary contact** only for the correct main contact. Contacts can be edited or removed from the client page. For a client portal account, create a **User** separately; a contact does not become a login automatically.
+Creating a client opens its detail page. If the client needs portal access, choose **Create Client login**. HR or Super Administrator with client-update permission can create and link the fixed Client User account in one step. Share the displayed **Client Code** and one-time temporary password privately with the authorized client contact; the client must change the password at first sign-in. The password cannot be viewed again. If the response is lost, refresh before retrying; ask Super Administrator to reset a lost password. A Super Administrator can search and link an eligible existing Client User instead of creating a duplicate. Replacing an account ends the previous account's sessions.
+
+The linked account automatically sees **all non-deleted sites** belonging to this client, including sites added later. Confirm that this is acceptable before creating or linking the account. The contact record is separate: choose **Add contact** and enter a person's name (`Neha Shah`), optional designation (`Regional Facilities Manager`), optional valid email (`neha@example.com`), optional mobile, and tick **Primary contact** only for the correct main contact. A contact does not become a login automatically.
 
 ## Create a site and security post
 
@@ -83,8 +85,8 @@ On the employee page, choose **Assign site**. Example: Site `Example Retail - Ah
 
 Changing employment status to inactive/terminated, ending an assignment, and archiving site records can be blocked if future published shifts still depend on them. Fix those shifts rather than forcing a change.
 
-## Site access for field officers and client users
+## Site access for field officers
 
-On the site page, **Site access → User to add → Add user → Save site access**. A Field Officer account receives **Field operations** scope; a Client User receives **Client read-only** scope. The account must already exist with the matching kind and role. Saving replaces the site's entire active grant list: check every listed user before saving, or you may remove someone else's access.
+On the site page, **Site access → User to add → Add user → Save site access**. A Field Officer account receives **Field operations** scope. The account must already exist with the matching kind and role. Saving replaces the site's active Field Officer grant list: check every listed user before saving, or you may remove someone else's access. Client users are not added here; their access comes from the account linked on the client page.
 
-A grant controls *which site* can be read. Feature permission controls *which action* is allowed there. Client users should not receive exact tracking-policy coordinates or employee private contact data through client-scoped views. Field officers need the attendance **Approve** permission as well as a site grant before they can decide an offline punch. Ask Super Administrator to adjust a role/override if needed; do not grant broader sites as a substitute.
+A Field Officer grant controls *which site* can be read. Feature permission controls *which action* is allowed there. A Client User sees all non-deleted sites of its mapped client, but not exact tracking-policy coordinates or employee private contact data through client-scoped views. Field officers need the attendance **Approve** permission as well as a site grant before they can decide an offline punch. Ask Super Administrator to adjust a role/override if needed; do not grant broader sites as a substitute.

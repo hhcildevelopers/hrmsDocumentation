@@ -12,15 +12,15 @@ This handbook explains the features **available in the current application**, us
 | HR Administrator / authorized planner | [Setup](02-clients-sites-employees.md), then [shift scheduling](03-shift-scheduling.md) | Maintain clients, sites, employees, assignments, and published rosters. |
 | Attendance reviewer / authorized supervisor | [Attendance review](05-attendance-review.md) | Review site attendance and decide provisional offline punches. |
 | Employee or field officer using field attendance | [Field portal](04-employee-field-portal.md) | See published duty, check location, punch, and check the result. |
-| Field officer with an operations site grant | [Site access](02-clients-sites-employees.md#site-access-for-field-officers-and-client-users), [shift scheduling](03-shift-scheduling.md), [attendance review](05-attendance-review.md) | View only granted sites; approval actions require an additional permission. |
-| Client user | [Current client-user access](06-troubleshooting-and-terms.md#what-client-users-can-use-today) | Confirm what is available now; do not rely on the demo client portal for reports. |
+| Field officer with an operations site grant | [Site access](02-clients-sites-employees.md#site-access-for-field-officers), [shift scheduling](03-shift-scheduling.md), [attendance review](05-attendance-review.md) | View only granted sites; approval actions require an additional permission. |
+| Client user | [Current client-user access](06-troubleshooting-and-terms.md#what-client-users-can-use-today) | Sign in with Client Code and check read-only worked-hour totals for all of your organization's sites. |
 
 For an error or unfamiliar term, see [Troubleshooting and terms](06-troubleshooting-and-terms.md).
 
 ## Correct setup order
 
-1. Super Administrator creates a portal user and assigns the right active role. Give the temporary password privately; the user must change it at first sign-in.
-2. HR creates a **client**, then a **site** under that client and at least one **security post**.
+1. Super Administrator creates central staff accounts and assigns the right active roles. Give temporary passwords privately; users must change them at first sign-in.
+2. HR creates a **client** and, if needed, its Client Portal login from the saved client detail. HR then creates a **site** under that client and at least one **security post**. A linked Client User sees all of that client's sites automatically.
 3. HR confirms the site's real duty point and creates a **geofence/tracking policy version**. A site postal address and a geofence center are different records.
 4. HR creates an **employee profile**, optionally links an already-created Employee/Field Officer portal account, and assigns the employee to the site/post.
 5. Planner creates **shift templates**, **post coverage requirements**, and **recurring roster patterns**; generates shifts, fixes gaps, then **publishes** the date range.

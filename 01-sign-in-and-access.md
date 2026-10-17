@@ -16,6 +16,8 @@ Open **Users → Create user**. This operation requires Super Administrator acce
 
 HR can instead create a fixed Employee login from a saved employee's **Profile → Portal account → Create Employee login**. This does not grant HR access to general user administration, role changes or password resets.
 
+HR with client-update permission can also create a fixed Client User login from a saved active client's **Client Portal account → Create Client login**. This does not grant HR access to general Users administration or account replacement.
+
 | Field | Good training example | How to fill it |
 | --- | --- | --- |
 | Username | `guard_1042` | Unique sign-in name, 3–80 characters: letters, numbers, dot, underscore, or hyphen. Avoid spaces. This is not automatically the employee code. |
@@ -27,7 +29,7 @@ HR can instead create a fixed Employee login from a saved employee's **Profile �
 
 Existing unlinked Employee accounts may have no company assigned. Open **Users → Manage → Employee account company**, choose an active company, and save. Linked accounts change company through employee transfer. Non-Super staff instead require **Company access** grants; this is a separate setting.
 
-For a field officer who must both punch for their own duty **and** review granted sites in the admin portal, use a **staff-kind** account with the **Field Officer** role, link that account to an active employee profile, grant the relevant sites, and give only the needed feature permissions. The field portal accepts Field Officer-role accounts; site-level attendance review specifically requires a staff-kind Field Officer with the appropriate grant and approval permission. A field officer who only uses their own field duties can have an employee-kind account, but that kind does not grant supervisor review access. Confirm HHCIL's intended responsibilities before choosing the kind. For a client user, choose **client-kind** and the **Client User** role; grant access to specific sites separately. Do not give everyone the Super Administrator role to fix a missing menu.
+For a field officer who must both punch for their own duty **and** review granted sites in the admin portal, use a **staff-kind** account with the **Field Officer** role, link that account to an active employee profile, grant the relevant sites, and give only the needed feature permissions. The field portal accepts Field Officer-role accounts; site-level attendance review specifically requires a staff-kind Field Officer with the appropriate grant and approval permission. A field officer who only uses their own field duties can have an employee-kind account, but that kind does not grant supervisor review access. Confirm HHCIL's intended responsibilities before choosing the kind. For a client user, prefer creating the login from the saved client page; it receives the fixed **Client User** role and access to all of that client's sites automatically. Do not give everyone the Super Administrator role to fix a missing menu.
 
 After **Create**, the screen shows a generated **Temporary password once**. Hand it to that individual through HHCIL's approved private channel, then close the dialog. The user changes it at first sign-in. If it was lost, open the account and use **Reset password**; you cannot reveal the old password again.
 
@@ -35,13 +37,13 @@ After **Create**, the screen shows a generated **Temporary password once**. Hand
 
 In **Users → Manage**, an authorized Super Administrator can edit display name, email, user kind, status, roles, and per-feature permission overrides. Roles provide defaults; an explicit user **allow** or **deny** changes an individual action, and **deny takes precedence**. Overrides require a reason. Changes to a role's permissions affect its active holders on later requests; they are not copied into every user record.
 
-The role/permission matrix includes actions such as **List** (open a list), **View** (open details), **Create**, **Update**, **Delete**, **Approve**, **Export**, and **Financial** where the feature supports them. A checked permission cannot bypass a client's or field officer's site scope. A user may have **View** permission and still be unable to open a site they were not granted.
+The role/permission matrix includes actions such as **List** (open a list), **View** (open details), **Create**, **Update**, **Delete**, **Approve**, **Export**, and **Financial** where the feature supports them. A checked permission cannot bypass a client's mapped-organization scope or a field officer's site grants. A Field Officer may have **View** permission and still be unable to open an ungranted site.
 
 Examples of access decisions:
 
 - An HR Administrator can maintain workforce data only if the required feature permissions are present.
 - A Field Officer granted Site A cannot use that grant to view Site B. To review Site A offline punches, the officer additionally needs the attendance **Approve** action.
-- A Client User's site grant is read-only and does not expose policy coordinates or employee contact details in client-scoped responses.
+- A Client User sees all non-deleted sites of its mapped client, but does not receive geofence policy coordinates or employee private contact details in client-scoped responses.
 
 **Reset password** generates another one-time temporary password and revokes sessions. **Revoke sessions** signs the user out. **Disabled/locked** stops use of the account; **Delete** soft-deletes it, revokes roles/sessions, and retains audit history. These actions ask for confirmation. If you act on your own account, expect to be signed out (for a self-reset, save the displayed temporary password before acknowledging it). The last active Super Administrator is protected from removal or demotion; do not work around this safeguard.
 

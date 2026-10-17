@@ -26,7 +26,7 @@ Errors in admin forms appear near the field and in the alert; read both. For a p
 
 ## What client users can use today
 
-The **dedicated client-web app** currently has a demo login and a backend-health dashboard; it is **not** a completed customer self-service portal. The backend supports site-scoped client read access, and permissioned admin routes can expose limited client/site/roster information when HHCIL explicitly grants and deploys that access. No production-ready client download/report workflow or precise-employee-location map is present. Do not issue client instructions promising those features until the portal is completed and approved.
+The dedicated Client Portal accepts the linked Client Code (or username) and password. Its current dashboard shows read-only completed worked-hour totals for all non-deleted sites belonging to the mapped client, including later sites. Choose a work month and press **Show**. Open shifts and pending offline punches are not included; the totals are not payroll calculations. Client download/export, a precise employee-location map, and full self-service reporting are still pending. Do not promise those features until delivered and approved.
 
 ## Terms used in the HRMS
 
@@ -50,7 +50,7 @@ The **dedicated client-web app** currently has a demo login and a backend-health
 | Provisional/offline punch | Saved location/time evidence that needs sync and possibly an explicit review; not confirmed attendance. |
 | Supervisor exception | Audited manual close of an active attendance session; not a GPS-verified punch-out or handover. |
 | Handover | Incoming guard accepts responsibility from outgoing guard. The dedicated two-person workflow is **not implemented yet**. |
-| Site grant | Restricts a Field Officer or Client User to specified sites; feature permission is also required. |
+| Site grant | Restricts a Field Officer to specified operational sites. A Client User instead sees every non-deleted site of its mapped client; feature permission is also required. |
 | Role / override | Default action rights for a group / an explicit individual allow or deny with reason. |
 | Soft delete | Hides or deactivates a record without erasing the audit history; codes may remain reserved. |
 
