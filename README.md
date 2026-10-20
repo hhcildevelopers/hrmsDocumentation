@@ -1,45 +1,40 @@
-# HHCIL HRMS — user handbook
+# Hitech Group HRMS — user handbook
 
-This handbook explains the features **available in the current application**, using the labels you see on screen. It is for Super Administrators, HR Administrators, roster planners, attendance reviewers, field officers, and employees. Your menu may show fewer items because access depends on both your permissions and the sites assigned to you.
+This handbook explains what the HRMS currently does, in everyday language. It is for Super Administrators, HR Administrators, Field Officers, employees, attendance reviewers, and Client Portal users. Screens and buttons depend on your access; if you cannot see an action, ask your administrator rather than using someone else's account.
 
-> All names, dates, addresses, account names, and coordinates in this handbook are **fictional training examples**. Never copy the sample coordinates or a map search result into a live attendance policy without confirming the actual duty gate/post on site.
+> All people, dates, codes, addresses, and coordinates below are **training examples**. Confirm real employee and site details before saving them.
 
-## Start with your role
+## Find your guide
 
-| If you are… | Read first | Main job today |
-| --- | --- | --- |
-| Super Administrator | [Sign-in and access](01-sign-in-and-access.md), then [setup](02-clients-sites-employees.md) | Create accounts and roles; supervise setup and access. |
-| HR Administrator / authorized planner | [Setup](02-clients-sites-employees.md), then [shift scheduling](03-shift-scheduling.md) | Maintain clients, sites, employees, assignments, and published rosters. |
-| Attendance reviewer / authorized supervisor | [Attendance review](05-attendance-review.md) | Review site attendance and decide provisional offline punches. |
-| Employee or field officer using field attendance | [Field portal](04-employee-field-portal.md) | See published duty, check location, punch, and check the result. |
-| Field officer with an operations site grant | [Site access](02-clients-sites-employees.md#site-access-for-field-officers), [shift scheduling](03-shift-scheduling.md), [attendance review](05-attendance-review.md) | View only granted sites; approval actions require an additional permission. |
-| Client user | [Current client-user access](06-troubleshooting-and-terms.md#what-client-users-can-use-today) | Sign in with Client Code and check read-only worked-hour totals for all of your organization's sites. |
+| Your work | Read |
+| --- | --- |
+| Sign in, select a company, manage users or roles | [Sign-in and access](01-sign-in-and-access.md) |
+| Create clients, sites, geofences or employees | [Clients, sites and employees](02-clients-sites-employees.md) |
+| Set a common shift, assign duty or transfer an employee | [Common shifts and assignments](03-shift-scheduling.md) |
+| Punch on a phone or work as a Field Officer | [Field Portal](04-employee-field-portal.md) |
+| Review punches, working hours or exceptions | [Attendance review](05-attendance-review.md) |
+| Fix a problem or understand a term | [Troubleshooting and terms](06-troubleshooting-and-terms.md) |
+| Enter private profile/bank details or handle documents | [Employee records and documents](07-employee-records-and-documents.md) |
 
-For an error or unfamiliar term, see [Troubleshooting and terms](06-troubleshooting-and-terms.md).
+## Normal setup and attendance flow
 
-## Correct setup order
+1. A Super Administrator grants central staff access to the right **company** and gives them only the permissions they need. HR creates an employee profile; a profile is not automatically a login.
+2. In the selected company, HR creates the client and site, adds a post if needed, and confirms the site's GPS duty point and geofence. A client's site belongs to that one company.
+3. HR opens the saved employee, creates or links an Employee login if the person needs the Field Portal, and completes any permitted personal, bank or document details.
+4. An authorized administrator uses **Common → Shifts** to maintain reusable shift times for the whole group. On the employee's **Assignments** tab, HR chooses the site, optional post, common shift and working weekdays. The system creates dated duties automatically. No routine roster generation or publication is needed.
+5. The employee checks the correct duty in the Field Portal and punches with a fresh on-site GPS reading. They check **Punches** for the server result. A Field Officer or HR Administrator can transfer an employee when operational needs change, subject to their grants.
+6. An authorized reviewer uses **Attendance review** for offline punches and exceptional punch-outs. Completed punch-in to punch-out time appears as worked hours; it is **not** a payroll calculation.
 
-1. Super Administrator creates central staff accounts and assigns the right active roles. Give temporary passwords privately; users must change them at first sign-in.
-2. HR creates a **client** and, if needed, its Client Portal login from the saved client detail. HR then creates a **site** under that client and at least one **security post**. A linked Client User sees all of that client's sites automatically.
-3. HR confirms the site's real duty point and creates a **geofence/tracking policy version**. A site postal address and a geofence center are different records.
-4. HR creates an **employee profile**, optionally links an already-created Employee/Field Officer portal account, and assigns the employee to the site/post.
-5. Planner creates **shift templates**, **post coverage requirements**, and **recurring roster patterns**; generates shifts, fixes gaps, then **publishes** the date range.
-6. Employee opens the field portal, checks today's published duty, punches with a fresh phone location at the site, and checks **Punches** for the decision.
-7. Authorized reviewer checks **Attendance review** for provisional offline punches or an exceptional punch-out.
+For example, a guard assigned to Site A, the 08:00–20:00 common shift, and Monday–Saturday will see a dated duty on those days. If transferred to Site B and the 20:00–08:00 shift, new duties follow the new assignment. Older attendance stays with Site A. If the guard is already punched in, the transfer waits until the Site A session is closed.
 
-A user account, employee profile, site assignment, and published shift are **four separate things**. Completing just one does not create the others.
+## What is and is not available
 
-## Current boundaries
-
-- The employee field portal is a mobile-friendly **web app**. Android/iOS native packaging and background tracking are later work.
-- **Check my location** and punching use a foreground GPS sample. The current app does **not** continuously monitor the employee, detect geofence exits during duty, send live-location alerts, or prove that a security post stayed occupied.
-- A published shift is a plan; a confirmed punch is attendance evidence; neither is a completed two-person handover. Automated no-show/early-departure alerts and handover are not yet available.
-- Offline punches are provisional until the server accepts a retry or an authorized reviewer approves them. A saved-on-phone message is **not** attendance confirmation.
-- The dedicated client-web portal currently has a demo login and backend-health dashboard only. Do not promise client downloads, reports, or self-service from that screen yet. Client-scoped read permissions exist in the backend and permissioned administration views, subject to deployment policy.
-- This handbook does not document payroll, payslips, leave, documents, or other planned modules as live features.
+- The Admin Portal is company-aware. Super Administrators can work across active companies; other staff need a company grant. The Client Portal belongs to its linked client and shows read-only completed worked-hour totals for that client's sites.
+- The Field Portal is a mobile-friendly **web app**, not a native Android/iOS app yet. Location is requested for a check or punch. Continuous background location, geofence-exit alerts, automated no-show alerts, and two-person shift handover are **not live**.
+- Offline punches are provisional until the server accepts or an authorized reviewer approves them. A saved-on-phone message is not attendance confirmation.
+- Staff-reviewed documents are **not** Aadhaar, PAN, or other provider-verified identity documents. KYC-provider verification, payroll, payslips, and other future HR modules are not described here as live features.
+- A common shift is a time pattern; an assignment is where and when a person should work; a dated duty is the particular day's plan; a confirmed punch is attendance evidence. None alone proves the person stayed at the post throughout the shift.
 
 ## Before a real-site pilot
 
-Have an HHCIL owner approve the site address, duty-point pin, radius and accuracy, site timezone, shift rules, roster approver, employee notice, and offline-review procedure. Test punch-in/out with a real phone at the actual gate or post. A map preview, desktop location, or training example is not enough.
-
-**Handbook version:** current repository features through Phase 3.5 attendance-phone switching and the admin Google geofence picker (13 October 2026). HHCIL should review role names, support contacts, Hindi wording, and pilot policy values before publishing this handbook to end users.
+Have an Hitech Group owner approve each company's access, employee setup, site address, duty-point pin, radius, GPS accuracy, timezone, shift hours, working days, and offline-review procedure. Test punch-in and punch-out on a real phone at the actual duty point. Do not rely on a map search result or desktop location alone. HHCIL should also review the handbook's role names, support contacts, and Hindi wording before sharing it with end users.

@@ -1,56 +1,51 @@
-# 1. Sign-in, passwords, users, and roles
+# 1. Sign-in, companies and access
 
-[← Handbook](README.md)
+[← Handbook](README.md) · [Next: clients and employees →](02-clients-sites-employees.md)
 
-## Sign in safely
+## Use the correct portal
 
-Use the official portal link supplied by HHCIL. An administrator signs in on the **Admin Portal** with their username. Employees can sign in on the **Field Portal** with their Employee Code or username and password. A linked Client Portal account can use its Client Code or username and password. An unlinked Field Officer uses their username. Codes do not replace passwords.
-
-If an administrator gives you a temporary password, sign in and complete **Create a secure password** before any other task. Enter the temporary password in **Current/Temporary password**, then a new password twice. The new password must have at least **12 characters**, uppercase and lowercase letters, a number, and a symbol. It must not contain your username or be the same as the current password. Example of the *format only*: `River!Cloud42S`; **do not use this published example as your password**. Never share your password or send it in a chat group.
-
-One account has one active session. Logging in elsewhere can end an earlier session. After repeated wrong passwords, an account can be temporarily locked; stop guessing and contact an administrator. Use **Sign out** on a shared phone or computer.
-
-## Super Administrator: create a portal user
-
-Open **Users → Create user**. This operation requires Super Administrator access.
-
-HR can instead create a fixed Employee login from a saved employee's **Profile → Portal account → Create Employee login**. This does not grant HR access to general user administration, role changes or password resets.
-
-HR with client-update permission can also create a fixed Client User login from a saved active client's **Client Portal account → Create Client login**. This does not grant HR access to general Users administration or account replacement.
-
-| Field | Good training example | How to fill it |
+| Portal | Who uses it | Sign-in identifier |
 | --- | --- | --- |
-| Username | `guard_1042` | Unique sign-in name, 3–80 characters: letters, numbers, dot, underscore, or hyphen. Avoid spaces. This is not automatically the employee code. |
-| Display name | `Asha Patel` | Person's recognisable name, 2–150 characters. |
-| Email (optional) | `asha.patel@example.com` | A real, working address if HHCIL uses it; otherwise leave blank. Do not type `N/A` into an email field. |
-| User kind | `employee` | Choose `staff` for central staff, `employee` for a worker/field-officer field account, or `client` for a client contact. This choice does **not** create an employee profile. |
-| Roles | `Employee` | Select at least one appropriate active role. Prefer the minimum access needed. |
-| Employee account company | `Hitech Human Capital Pvt Ltd` | Required for Employee-kind accounts. Choose the company where HR will link this user to an employee. The user cannot sign in until linked. |
+| **Admin Portal** | Super/HR Administrators and other authorized staff | **Username** and password |
+| **Field Portal** | Employees and Field Officers | **Employee Code or username** and password. An unlinked Field Officer uses username. |
+| **Client Portal** | The account linked to a client | **Client Code or username** and password |
 
-Existing unlinked Employee accounts may have no company assigned. Open **Users → Manage → Employee account company**, choose an active company, and save. Linked accounts change company through employee transfer. Non-Super staff instead require **Company access** grants; this is a separate setting.
+These are separate entry points. A valid Employee Code does not let someone sign in to Admin, and a Client Code does not let someone sign in to Field. Every portal requires a password. Codes are unique across the group, so an employee or client does not choose a company before entering credentials. **For Admin, use your username even if the current sign-in field mentions an employee ID**; Employee Code login belongs to the Field Portal.
 
-For a field officer who must both punch for their own duty **and** review granted sites in the admin portal, use a **staff-kind** account with the **Field Officer** role, link that account to an active employee profile, grant the relevant sites, and give only the needed feature permissions. The field portal accepts Field Officer-role accounts; site-level attendance review specifically requires a staff-kind Field Officer with the appropriate grant and approval permission. A field officer who only uses their own field duties can have an employee-kind account, but that kind does not grant supervisor review access. Confirm HHCIL's intended responsibilities before choosing the kind. For a client user, prefer creating the login from the saved client page; it receives the fixed **Client User** role and access to all of that client's sites automatically. Do not give everyone the Super Administrator role to fix a missing menu.
+If you receive a temporary password, sign in and complete **Create a secure password** first. Use at least 12 characters with uppercase and lowercase letters, a number, and a symbol. Do not include your username or reuse the temporary password. Never share either password or send it in a chat group. An account has one active login session: signing in on another browser or phone can end the earlier session. After repeated failed attempts, stop guessing and contact an administrator.
 
-After **Create**, the screen shows a generated **Temporary password once**. Hand it to that individual through HHCIL's approved private channel, then close the dialog. The user changes it at first sign-in. If it was lost, open the account and use **Reset password**; you cannot reveal the old password again.
+## Choose a company and switch safely
 
-## Manage an account
+After password change, Admin staff and Field Officers who have company access choose a company on **Select a company**. The Admin Portal's company switcher is near the top-right avatar; a multi-company Field Officer can switch in **Menu**. Switch before creating or reviewing records. For example, a client created while **Hitech Human Capital Pvt Ltd** is selected belongs to that company, not Hitech Human Capital (India) Ltd.
 
-In **Users → Manage**, an authorized Super Administrator can edit display name, email, user kind, status, roles, and per-feature permission overrides. Roles provide defaults; an explicit user **allow** or **deny** changes an individual action, and **deny takes precedence**. Overrides require a reason. Changes to a role's permissions affect its active holders on later requests; they are not copied into every user record.
+If you see **No company is assigned to you**, ask a Super Administrator for a company grant. Do not create another account. Super Administrators can use every active company. Other staff see only their granted active companies, and their feature permissions and Field Officer site grants restrict what they may do inside each one. Switching companies clears the previous company's working view; it does not copy or move records.
 
-The role/permission matrix includes actions such as **List** (open a list), **View** (open details), **Create**, **Update**, **Delete**, **Approve**, **Export**, and **Financial** where the feature supports them. A checked permission cannot bypass a client's mapped-organization scope or a field officer's site grants. A Field Officer may have **View** permission and still be unable to open an ungranted site.
+An employee's self-service company comes from their linked employee profile. A Client Portal account's company comes from its linked client. They do not choose a different company's data. A company transfer must use the employee's **Assignments** workflow, not the company switcher.
 
-Examples of access decisions:
+## Super Administrator: create and maintain access
 
-- An HR Administrator can maintain workforce data only if the required feature permissions are present.
-- A Field Officer granted Site A cannot use that grant to view Site B. To review Site A offline punches, the officer additionally needs the attendance **Approve** action.
-- A Client User sees all non-deleted sites of its mapped client, but does not receive geofence policy coordinates or employee private contact details in client-scoped responses.
+Use **Companies** to review the group company list. New companies start inactive; review setup and grants before activation. A company with current clients, sites or employees may be blocked from deactivation. Use **Users → Create user** for general account creation; this remains Super-Administrator-only.
 
-**Reset password** generates another one-time temporary password and revokes sessions. **Revoke sessions** signs the user out. **Disabled/locked** stops use of the account; **Delete** soft-deletes it, revokes roles/sessions, and retains audit history. These actions ask for confirmation. If you act on your own account, expect to be signed out (for a self-reset, save the displayed temporary password before acknowledging it). The last active Super Administrator is protected from removal or demotion; do not work around this safeguard.
+| Field | Training example | What it means |
+| --- | --- | --- |
+| Username | `guard_1042` | Unique internal sign-in name, 3–80 allowed characters. It is not automatically the Employee Code. |
+| Display name | `Asha Patel` | Person's recognizable name. |
+| Email | `asha.patel@example.com` | Optional; leave blank if unknown rather than typing `N/A`. |
+| User kind | `employee` | `staff` for central staff/operations officers, `employee` for a field worker account, `client` for a client contact. A user is not an employee or client record until linked. |
+| Role | `Employee` | Select the appropriate active role; use minimum necessary access. |
+| Employee account company | `Hitech Human Capital Pvt Ltd` | Required when creating an unlinked Employee-kind account. It says where that account can be offered for linking; it is **not** a staff company grant. |
+| Company access | `Hitech Human Capital Pvt Ltd` | For non-Super **staff**. Grant one or more companies where they work. Permissions and site grants still apply. |
 
-## Create or adjust a role
+Prefer the shorter onboarding flows: HR with the right permission can create an **Employee login** from a saved employee's **Profile → Portal account**, or a **Client login** from a saved client's **Client Portal account**. These fixed-role workflows create and link in one action. HR cannot thereby administer general users. A Client User does not receive staff company grants; linking it to a client determines its one company and gives read access to that client's non-deleted sites.
 
-Open **Roles & permissions → Create role** (Super Administrator only). Example: name `Regional Viewer`, code `regional_viewer`, description `Read assigned site data`. Role codes use **lowercase letters, numbers, and underscores**, start with a letter, and are 2–50 characters. Enter a clear business purpose before assigning people. Open the role, tick only needed actions per feature, and select **Save permissions**. A role assignment does not automatically grant site access. Deactivating a role removes its permissions from active users on their next API request; confirm it only after checking affected users. A custom-role **Delete** deactivates it; system roles cannot be deleted.
+The temporary password appears **once** after creation. Share it privately. If it is lost, a Super Administrator must reset it; the old password cannot be retrieved. An existing unlinked Employee account may need its **Employee account company** set by a Super Administrator before HR can find it in the employee picker. Already-linked accounts are not candidates for another employee.
 
-## Audit log
+For a staff-kind Field Officer who also works their own duty, link the account to an employee profile and separately grant the needed companies, sites and permissions. A site grant alone does not add an action permission. An unlinked Field Officer can use username login for authorized operations but has no personal employee duty to punch.
 
-The **Audit log** records actor, action, target, time, and outcome for administrative changes. Use it to investigate a changed account, permission, site policy, or roster. It is not a replacement for checking the current record. Audit access is permission-controlled.
+## Roles, permissions and site access
+
+In **Users → Manage**, Super Administrators can manage company access, roles, status and individual permission overrides. A role supplies default feature permissions; a specific allow or deny can change one user's rights, and a deny wins. A role or permission does not bypass company and site boundaries. For example, an officer with access to Company A and Site A cannot use those rights to open Site B in Company B.
+
+In **Roles & permissions**, Super Administrators can create a named role and choose its feature actions. Use a clear code such as `regional_viewer` and give only the actions needed. A role change affects current holders on later requests. Do not assign Super Administrator just to make a missing menu appear. Common Shift editing is **group-wide**; HR needs explicit Common Shift create/update permission, while Field Officers only need the read access required for transfers.
+
+**Reset password** creates a one-time password and ends sessions. **Revoke sessions**, disabling/locking, and deleting an account also affect sign-in and require confirmation. Deleting a user is a soft delete that keeps audit history. The system protects the final active Super Administrator. Use **Audit log** to see who made an administrative change, when, and to which record; do not put full ID numbers or passwords in notes or support messages.

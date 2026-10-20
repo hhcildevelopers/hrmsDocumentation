@@ -1,52 +1,61 @@
-# 3. Shift scheduling and roster publication
+# 3. Common shifts, employee assignments and transfers
 
-[← Handbook](README.md) · [Previous: setup](02-clients-sites-employees.md) · [Next: field attendance →](04-employee-field-portal.md)
+[← Handbook](README.md) · [Previous: setup](02-clients-sites-employees.md) · [Next: Field Portal →](04-employee-field-portal.md)
 
-Open **Shift scheduling**, find the site, and choose **Open roster**. The site page has two tabs: **Templates and recurring rules** and **Roster and coverage**. A shift shown in the roster is *planned duty*, not proof that anyone attended or handed over the post.
+The everyday scheduling flow is now simple: **choose a reusable shift, then assign it to an employee at a site for selected weekdays**. The system creates dated duties automatically. The old site-template, coverage-rule, roster-generation and publication screens are not part of routine scheduling. Historical duties and records remain available for audit.
 
-## Before entering rules
+## Step 1 — Check or add a common shift
 
-Confirm the correct site and **timezone**, active security post, active assigned employees, required headcount, and weekday pattern with the client. An employee must be eligible for that site/post, and published shifts cannot overlap for the same employee. Use local site dates. For an overnight shift starting at 20:00 on 12 October and ending at 08:00 on 13 October, the **work date is 12 October**.
+Open **Common → Shifts** in the Admin Portal. These shift times are available to every company; they do not belong to a particular client or site. The starting catalog is:
 
-## Step 1 — Add shift templates
+| Start | Duration to enter | Ends |
+| --- | ---: | --- |
+| 08:00 | 720 minutes | 20:00, same day |
+| 20:00 | 720 minutes | 08:00, next day |
+| 09:00 | 480 minutes | 17:00, same day |
+| 17:00 | 480 minutes | 01:00, next day |
+| 01:00 | 480 minutes | 09:00, same day |
 
-In **Templates and recurring rules → Add template**, enter one template per distinct duty period. Start time is the site's local 24-hour time (`HH:mm`). Duration is in **minutes**, not hours. Arrival/departure grace and handover window are in minutes.
+If the real shift is 09:00–21:00, **do not choose 09:00–17:00** because the start time looks similar. An authorized administrator should add a separate 720-minute shift. When adding a shift, enter a stable **Code** such as `0900_2100`, a clear **Shift name**, local **Start time** (`HH:mm`), **Duration (minutes)**, and arrival/departure grace in minutes. Duration must be 60–1,440 minutes; each grace value must be 0–180 minutes. A shift time is interpreted in the assigned **site's timezone**.
 
-| Example for 12-hour coverage | Start | Duration | End on local clock |
-| --- | --- | ---: | --- |
-| `DAY12` — Day duty | `08:00` | `720` | `20:00` same day |
-| `NIGHT12` — Night duty | `20:00` | `720` | `08:00` next day |
+Super Administrators can edit common shifts. An HR Administrator needs explicit Common Shift create/update permission. Editing an existing shift creates a new version: future unstarted duties can use the new times, while started/completed attendance keeps its saved time snapshot. Check who uses a shift before changing a group-wide rule. An active common shift cannot be deactivated while an active employee is assigned to it.
 
-For three 8-hour shifts, use `06:00`, `14:00`, and `22:00`, each with **480** minutes. Template code uses 2–50 letters, digits, `.`, `_`, or `-`; name should be understandable to a planner (for example, `Main gate night duty`). A duration must be **60–1,440 minutes**. Arrival and departure grace allow **0–180 minutes**; handover window allows **0–240 minutes**. Example values: arrival grace `15`, departure grace `15`, handover window `30`. Do not claim these fields automatically generate late-arrival or handover alerts; those workflows are not live.
+## Step 2 — Give an employee a first duty
 
-The current attendance punch-in window opens before shift start by the larger of arrival grace and handover window, capped at 120 minutes. For an 08:00 start with 15-minute arrival grace and 30-minute handover window, the phone can show **Punch in opens at 07:30**. This is eligibility to attempt a punch, not permission to leave early or proof of an actual handover. The field app obtains exact window hints from the server.
+Select the employee's company in Admin, then open **Employees → View → Assignments → Assign duty**. This first assignment requires authorized HR/Super staff. Choose:
 
-## Step 2 — State the coverage requirement
+| Field | Example | Check before saving |
+| --- | --- | --- |
+| Client and site | `Example Retail · Ahmedabad West` | This is the actual duty site. The client and company come from the selected site; do not guess them separately. |
+| Post | `Main gate guard` | Optional. Choose the exact post if the employee works at one. |
+| Common shift | `08:00–20:00` | The correct start and duration, including an overnight end if applicable. |
+| Working days | `Mon–Sat` | Tick every day the shift **starts**. Untick a rest day. |
 
-Choose **Add requirement** for each post/template combination that must be covered. Example: `Main gate guard` + `DAY12`, **Required headcount** `1`, weekdays `Mon–Sun`, **Effective from** `2026-10-12`, **Effective to** blank for ongoing. Use `2` only when **two people must work that same post and shift at once**; do not set `2` merely because day and night shifts each need one guard. Headcount must be 1–100. Select at least one weekday. End date, if entered, must be on or after start date.
+The employee can have only **one active primary assignment**. The assignment records the company, client, site, post, shift and effective time. You do not need to press **Generate** or **Publish** for routine duties. Ask the employee to tap **Refresh** in the Field Portal after saving, and verify their next duty there. Attendance still needs an active employee/account, a valid site geofence, a usable phone location, and a server-accepted punch.
 
-For 24-hour coverage at one post, create a requirement for each template (day **and** night). A template by itself does not demand coverage. An uncovered required position appears as a **coverage gap** and blocks publication.
+For a night duty starting 20:00 on 12 October and ending 08:00 on 13 October, its **work date is 12 October** in the site's timezone. Select the weekday on which the shift **starts**, even though punch-out is next morning.
 
-## Step 3 — Assign recurring employees
+## Step 3 — Change a shift or transfer to another site
 
-Choose **Add pattern**. Select the matching coverage requirement, an eligible **Employee assigned to this site**, a **Position number**, weekdays, and effective dates. Position numbers run from **1 through the requirement's headcount**. For headcount `1`, choose position `1`; for headcount `2`, use separate patterns for positions `1` and `2`. Pattern dates must fit inside the requirement's dates.
+Open the employee's **Assignments** tab and choose **Transfer / change shift**. Select the destination site, optional post, common shift and working weekdays; enter a meaningful reason of at least 3 characters. One action covers all these examples:
 
-Example: employee `Asha Patel (HHC-01042)`, requirement `Main gate guard — DAY12 — 1 position`, position `1`, weekdays `Mon–Sat`, from `2026-10-12`. If Sunday also needs coverage, make sure an eligible Sunday pattern exists, possibly for another employee. Do not assign one employee to overlapping shifts, including across sites. An inactive/unassigned employee will be refused.
+- Same site, different shift: `08:00–20:00` to `20:00–08:00`.
+- Same client, another site or post.
+- Another client, with its destination site and shift.
+- Another Hitech Group company, when staff has the required company/transfer access. Field Officers additionally need both source and destination site grants.
 
-## Step 4 — Generate, inspect, publish
+An authorized Field Officer can use **Field Portal → Menu → Transfer employees**. They need access to the **source and destination companies and sites**, plus the transfer permission. They cannot transfer their own linked employee record. Field Officers cannot give a person their first duty; ask HR if the employee has no assignment. Transfers need an internet connection.
 
-In **Roster and coverage**, select a **From work date** and **To work date**, then **Load schedule**. The screen shows up to 42 days at once. **Generate 6 weeks** creates concrete draft shifts from the selected start date; repeat generation is safe and does not duplicate existing shifts. Read the created/existing count.
+If the employee is **not punched in**, the new assignment becomes active when the transfer succeeds. Future unstarted duties are replaced. The old assignment and old attendance remain in history; a cross-company transfer also changes the employee's current company of record.
 
-Inspect the calendar or switch to **List** to see each employee, post, status, and history. Expand **Review uncovered post/shift dates** if a gap warning appears. Fill missing patterns or replace an employee where allowed, regenerate/reload, and check the gap disappears. **Publish drafts** is available only when the selected range has no coverage gap; review the confirmation before publishing. Only **published/scheduled** duties become employee punchable duties in the field portal. After publishing, ask the employee to use **Refresh** on the phone.
+If the employee **is already punched in at Site A**, the transfer is **pending**. They must finish the existing attendance session at Site A using its rules. Only after a successful Site A punch-out, approved offline punch-out or authorized exception punch-out can Site B become active. A pending transfer does not permit punching at Site B. If the destination can no longer be used, HR must resolve the blocked transfer and submit a new one. For a cross-company move, the employee may need to sign in again after activation.
 
-When a rule is changed or deactivated, **already-generated shifts remain** until revised or cancelled. Do not assume that editing a recurring pattern changes every published duty. Open the actual date range and check it.
+Example reason: `Client requested night coverage at the west gate from today's next duty.` A reason such as `change` is too vague for later review, even if the form accepts it. Coordinate a mid-shift transfer with the site supervisor; this software does not confirm a physical handover.
 
-## Changes after generation
+## If the employee will stop working at the site
 
-In List view, use **Replace** to choose a different eligible employee, or **Extend** to enter a new end date/time and a reason of at least 3 characters. **Extend** uses your **browser's local timezone** in its date/time input; if you are planning for another city/timezone, double-check the displayed site-local result before saving. **Cancel** is shown for an eligible future shift and requires a reason. Use **History** to see the recorded revision. A stale or conflicting revision should be reloaded before retrying.
+Authorized central staff can choose **End** on the Assignments tab and enter a reason. This ends the current assignment and cancels affected unstarted future duties. It does **not** create a new assignment. If the employee is moving elsewhere, normally use **Transfer / change shift** instead so there is one continuous audit trail. Check any open attendance session first.
 
-Example good reason: `Replacement requested by site supervisor; original employee on approved leave.` Poor reason: `change`. Avoid replacing a shift after it has begun without coordinating with the site and checking attendance.
+## Check the result
 
-## Important limits
-
-The coverage warning checks the **published plan**, not who is physically present. This release does not automatically establish no-show, early departure, unattended-post, or completed-handover events. The supervisor must still use operational communication and **Attendance review** for actual punch evidence.
+After assigning or transferring, inspect the employee's **Assignments** history and ask them to refresh **Home** and **Shifts** on the phone. Check the expected site, local shift time and weekdays. The app shows punch-window guidance; the server decides whether a punch is allowed. A duty is a plan, not proof of attendance or a completed two-person handover.
