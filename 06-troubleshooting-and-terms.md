@@ -2,6 +2,8 @@
 
 [← Handbook](README.md)
 
+For the meaning, likely cause, step-by-step fix, and HR/Admin action for each common error, use [Common Errors & Solutions](08-common-errors-and-solutions.md).
+
 ## Quick problem guide
 
 | What happened | Check | What to do |
@@ -21,6 +23,7 @@
 | Map or search unavailable | Internet and map service. | Admin may enter **verified** coordinates manually. The map is guidance; a fresh GPS fix is still needed to punch. |
 | Punch saved but not confirmed | **Punches** shows waiting, checking, review or rejection. | Reconnect, sync/check the existing result, then contact a supervisor if needed. Do not keep sending new punches. |
 | “Use this phone for attendance” | Another phone is currently selected. | Sync old-phone evidence if possible, then switch explicitly on this phone. Server history remains readable. |
+| “This browser was used for attendance before” | Its saved browser ID was registered earlier, possibly for a different employee or an earlier phone enrollment. | Do not clear unsynced punches. Use a separate persistent browser profile or phone; ask HR if this is your normal device. See the [phone-registration guide](08-common-errors-and-solutions.md#this-browser-was-used-for-attendance-before). |
 | Phone-change limit reached | Employee's used count and App Configuration policy. | HR/Super Admin reviews the case and may reset usage with a reason. Do not create a duplicate account. |
 | Document upload fails | Correct type, JPG/PNG/PDF format, 5 MB limit, online connection and permission. | Preview a valid file and retry. A passport photo must be JPG/PNG. |
 | Document Delete disabled | **Document → Delete** permission. | Ask a Super Administrator to review the permission; do not borrow another person's account. |

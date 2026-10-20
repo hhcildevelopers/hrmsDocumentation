@@ -15,6 +15,7 @@ This handbook explains what the HRMS currently does, in everyday language. It is
 | Review punches, working hours or exceptions | [Attendance review](05-attendance-review.md) |
 | Fix a problem or understand a term | [Troubleshooting and terms](06-troubleshooting-and-terms.md) |
 | Enter private profile/bank details or handle documents | [Employee records and documents](07-employee-records-and-documents.md) |
+| Understand an error and follow recovery steps | [Common Errors & Solutions](08-common-errors-and-solutions.md) |
 
 ## Normal setup and attendance flow
 
