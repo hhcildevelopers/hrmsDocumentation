@@ -24,7 +24,7 @@ This handbook explains what the HRMS currently does, in everyday language. It is
 3. HR opens the saved employee, creates or links an Employee login if the person needs the Field Portal, and completes any permitted personal, bank or document details.
 4. An authorized administrator uses **Common → Shifts** to maintain reusable shift times for the whole group. On the employee's **Assignments** tab, HR chooses the site, optional post, common shift and working weekdays. The system creates dated duties automatically. No routine roster generation or publication is needed.
 5. The employee checks the correct duty in the Field Portal and punches with a fresh on-site GPS reading. They check **Punches** for the server result. A Field Officer or HR Administrator can transfer an employee when operational needs change, subject to their grants.
-6. An authorized reviewer uses **Attendance review** for offline punches and exceptional punch-outs. Completed punch-in to punch-out time appears as worked hours; it is **not** a payroll calculation.
+6. An authorized reviewer uses **Attendance review** for offline punches, exceptional punch-outs, and immediate, reasoned attendance corrections. The daily view includes duties with no recorded attendance. Effective in/out time appears as worked hours, with manual time clearly labelled; it is **not** a payroll calculation.
 
 For example, a guard assigned to Site A, the 08:00–20:00 common shift, and Monday–Saturday will see a dated duty on those days. If transferred to Site B and the 20:00–08:00 shift, new duties follow the new assignment. Older attendance stays with Site A. If the guard is already punched in, the transfer waits until the Site A session is closed.
 

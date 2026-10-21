@@ -11,7 +11,7 @@ For personal attendance you need an active employee profile linked to your login
 - **Home** shows the active duty first (including a night shift that started yesterday), otherwise a punchable duty or your next duty. It shows site, post, address, local time, status, and the main punch button above the map.
 - **Shifts** lists upcoming duties in order and past duties separately. Past duties have no punch button. If a shift is missing, tap **Refresh**, then ask HR or your supervisor to check the current assignment and working days.
 - **Punches** shows server attendance sessions, server review decisions, and punches saved on this phone. Choose a month and tap **Show history** to retrieve older server records. A saved-only punch on a different phone cannot appear until that phone syncs it.
-- **Menu** opens a side panel with your name, **My profile** (including **My documents**), and **Sign out**. A permitted Field Officer can also see **Collect documents**, **Transfer employees**, and, if granted more than one company, company choices. The language button is at the top left. The bell currently says notifications are coming later; it does not deliver attendance alerts today.
+- **Menu** opens a side panel with your name, **My profile** (including **My documents**), and **Sign out**. A permitted Field Officer can also see **Collect documents**, **Transfer employees**, **Attendance corrections**, and, if granted more than one company, company choices. The language button is at the top left. The bell currently says notifications are coming later; it does not deliver attendance alerts today.
 
 If Home says **Punch in opens at …**, wait until that time. If it says the shift can no longer be punched, contact the supervisor. Do not change your phone clock; the server checks the actual window. For a night shift, follow the date/time shown on the duty card, not just today's date.
 
@@ -29,6 +29,8 @@ Read the site name, post, address, and start time. Tap **Check my location** onl
 4. If your punch-out window has closed, tell your supervisor. An authorized person may record an **exception punch-out** with your verified **actual departure date/time** and a reason. It is marked as an exception, not a GPS-confirmed punch-out.
 
 Completed duties show **worked hours**, calculated from accepted punch-in to punch-out. An open duty has no final total. These hours do not subtract breaks or apply payroll rules.
+
+If a punch was missed or an accepted time is wrong, tell your supervisor the site, duty date, actual arrival/departure, and how those times can be checked. An authorized Field Officer or HR/Admin can record a reasoned correction; employees cannot do this themselves. Once saved, **Punches** shows the changed effective times and **Manually corrected — not GPS-verified**. This does not turn a manual time into a confirmed GPS punch. See [Attendance review and corrections](05-attendance-review.md).
 
 The phone's GPS uncertainty matters. Example: a site requires **50 m or better**, but the phone reports **138 m**. The app will tell you to move to an open area and retry. Even a 30 m reading can fail near the edge of the site because the server adds the reported uncertainty to the distance from the center. Do not use a different person's account or ask someone else to punch for you.
 
