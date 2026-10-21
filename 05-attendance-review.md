@@ -35,9 +35,11 @@ The actual time must be after the accepted punch-in and no later than now. For e
 
 ## Record an attendance correction
 
-Use this when **both punches were missed**, when an employee **punched in but missed punch-out**, or when an already saved time is wrong. Choose the correct company and site, then choose the duty's **start date** in **Daily attendance**. Find the employee and tap **Record attendance correction**. Field Officers can use **Menu → Attendance corrections** in the Field Portal for sites they are granted. Employees cannot correct their own attendance.
+Use this when **both punches were missed**, when an employee **punched in late but is still on duty**, when they **missed punch-out**, or when an already saved time is wrong. Choose the correct company and site, then choose the duty's **start date** in **Daily attendance**. Find the employee and tap **Record attendance correction**. Field Officers can use **Menu → Attendance corrections** in the Field Portal for sites they are granted. Employees and linked Field Officers cannot correct their own attendance; ask an HR or Super Administrator instead.
 
 Enter the **actual** in and out dates/times in the **site's timezone**, plus a factual reason of at least 10 characters. For example: `Duty register and site supervisor confirm 08:05 arrival and 20:10 departure.` Tap **Review hours**, read the calculated duration, and check any warning about early start, late finish, or longer-than-planned work. Confirm the warning only after checking the facts, then tap **Confirm and save**. The change applies immediately; there is no second approval step.
+
+If the employee is **still working** and only the punch-in time needs correction, leave **Correct punch-in only; keep this duty open** selected. Enter the actual start time and reason, review, and save. The duty stays in progress; do not invent a punch-out time. Worked hours appear only after the employee later punches out or an authorized reviewer records the actual departure.
 
 The entered period must overlap the selected duty, finish in the past, run in order, and be no longer than **16 hours**. You may enter time outside the planned shift if it is justified and you confirm the deviation. For example, for an 08:00–20:00 duty, an actual 07:45–20:15 period is allowed with the reason and warning confirmation; an 18-hour period is not.
 
