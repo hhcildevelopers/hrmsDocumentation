@@ -19,10 +19,10 @@ This handbook explains what the HRMS currently does, in everyday language. It is
 
 ## Normal setup and attendance flow
 
-1. A Super Administrator grants central staff access to the right **company** and gives them only the permissions they need. HR creates an employee profile; a profile is not automatically a login.
+1. A Super Administrator grants central staff access to the right **company** and gives them only the permissions they need. A Field Officer also needs an operations grant for the site where they will register employees.
 2. In the selected company, HR creates the client and site, adds a post if needed, and confirms the site's GPS duty point and geofence. A client's site belongs to that one company.
-3. HR opens the saved employee, creates or links an Employee login if the person needs the Field Portal, and completes any permitted personal, bank or document details.
-4. An authorized administrator uses **Common → Shifts** to maintain reusable shift times for the whole group. On the employee's **Assignments** tab, HR chooses the site, optional post, common shift and working weekdays. The system creates dated duties automatically. No routine roster generation or publication is needed.
+3. HR or an authorized Field Officer registers the employee with an Auto or Manual Employee Code, active Department/Designation/Employment Type, the site, common shift and working weekdays. This creates the employee, first duty assignment and Employee-only login together. Share the one-time password privately. Older saved employees can still use the separate account-link action.
+4. An authorized administrator uses **Common → Shifts** and the other Common masters for group-wide options. The system creates dated duties automatically from each assignment. No routine roster generation or publication is needed.
 5. The employee checks the correct duty in the Field Portal and punches with a fresh on-site GPS reading. They check **Punches** for the server result. A Field Officer or HR Administrator can transfer an employee when operational needs change, subject to their grants.
 6. An authorized reviewer uses **Attendance review** for offline punches, exceptional punch-outs, and immediate, reasoned attendance corrections. The daily view includes duties with no recorded attendance. Effective in/out time appears as worked hours, with manual time clearly labelled; it is **not** a payroll calculation.
 
