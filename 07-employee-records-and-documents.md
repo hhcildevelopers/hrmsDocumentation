@@ -6,7 +6,7 @@ These records are more private than the ordinary employee list. Work in the **co
 
 ## Personal, address and statutory details
 
-Open **Personal & bank**. In the personal section, enter the employee's father's name, date of birth and gender if known. The date picker uses a real past date; do not enter an estimated date just to complete the form. In the address section, put the current residence in **Present address** and the long-term residence in **Permanent address**. They may be the same, but confirm this with the employee. You may leave unknown optional fields blank and save an incomplete profile for later correction.
+Open **Personal**. This tab contains the basic employee profile and portal account, guardian relationship/name, addresses, background, contacts, Aadhaar and PAN. Select a relationship from Common; if an old value is marked legacy, ask HR to review it. Select the domicile from the India state/union-territory list, and choose one or more known languages (use Other for a custom language). Enter the real date of birth if known; do not invent an estimated date. Present and permanent addresses may match, but confirm that with the employee. Unknown optional fields may be left blank and completed later.
 
 The statutory-ID fields have format checks:
 
@@ -19,13 +19,23 @@ The statutory-ID fields have format checks:
 
 Example PAN **format**: `ABCDE1234F` (a fictional pattern; do not save this as an employee's ID). The form can hide or show entered numbers while editing. Collect only details HHCIL has approved and verified through its own procedure. Entering a number here does **not** verify it with UIDAI, Surepass or another KYC provider. During development, use synthetic data only; live full identity-data collection needs HHCIL's consent, retention and security policy first.
 
-Employees open **Field Portal → Menu → My profile** to see their own read-only details. ID and bank account numbers are masked there. If anything is wrong, they should contact HR; editing the phone screen is not supported.
+Employees open **Field Portal → Menu → My profile** to see their own read-only details, including their full ID and current bank account numbers. These values are private: do not share screenshots or leave the portal open on a shared phone. Another employee, a Field Officer, or a client cannot open this private record. If anything is wrong, contact HR; editing the phone screen is not supported.
 
 ## Bank account: make a new version
 
-In **Personal & bank → Bank account**, enter the official **Account holder name**, **Bank name**, **IFSC**, and **Full account number** twice. Choose Savings, Current or Salary only if known. IFSC has four letters, `0`, then six letters/numbers; for example, `ABCD0XXXXXX` is a **format illustration**, not a real branch. An account number must have 6–35 digits. Copy it from an approved bank proof and compare both entries before saving—do not guess from a masked value.
+In **Bank & salary pay → Bank accounts**, enter the official **Account holder name**, **Bank name**, **IFSC**, and **Full account number** twice. Choose Savings, Current or Salary only if known. IFSC has four letters, `0`, then six letters/numbers; for example, `ABCD0XXXXXX` is a **format illustration**, not a real branch. An account number must have 6–35 digits. Copy it from an approved bank proof and compare both entries before saving.
 
-Choose **Save new bank version**. A correction creates another version; it does not erase earlier HR history. The screen displays only masked account numbers afterward, even to HR. The employee's My profile shows the current bank account masked. Do not put full account numbers in notes, filenames, screenshots or support messages.
+Choose **Add bank account**. The added account becomes current and all earlier versions stay in the table. To use an older account again, choose **Make current** on its row and confirm; the system copies it into a new current version. There is no delete or in-place account-number edit. Authorized Super/HR staff see full history; the linked employee sees the full current account in My profile. Do not put account numbers in notes, filenames, screenshots or support messages.
+
+## Family, nominees and pay terms
+
+Open **Family & nominees**. Authorized Super/HR staff see full details for the selected company; Field Officers and clients do not. Add family members separately from nominees. Choose each relationship from Common. The compact tables show existing rows with Edit and Delete actions; deletion is audited. You may record a family member's date of birth, mobile, address, occupation, education and whether they live with the employee. Ask only for information needed for the HR record.
+
+Add nominees with their percentage shares. Optional Aadhaar and blood group may be recorded only when needed; entering Aadhaar requires confirmation that its holder consented. A stored number is **not** UIDAI/Surepass verification. Use synthetic numbers during development until HHCIL approves collection, retention and protection. You can save a draft below 100%. Choose **Mark nomination complete** only when shares total exactly 100%; reopen a completed nomination before editing. Check names and shares with the employee.
+
+In **Bank & salary pay → Pay terms**, choose an effective date and an active Common payment mode. Monthly pay needs a **Pay scale on** choice: calendar days, scheduled working days, or fixed days such as 26. Per-day pay has no pay-scale basis. Older pay versions may say **Not specified**. Enter a positive gross rate for **As per employee**; leave it empty for **As per unit rate** until HHCIL approves those rules. Set applicable policy flags. **Save new version** retains earlier terms and must have a later effective date. These entries do not calculate payroll or issue a payslip. If HR cannot save, a Super Administrator should review `payroll.UPDATE`.
+
+The employee sees their own currently effective family, nomination and pay terms in **Field Portal → My profile**. Future-dated pay changes are not shown there before they take effect. The employee cannot edit these records; they should ask HR to correct an error.
 
 ## Upload a document
 
