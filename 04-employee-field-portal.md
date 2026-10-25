@@ -4,7 +4,7 @@
 
 This page is for employees and Field Officers marking **their own** attendance. Use the official Field Portal link from Hitech Group on a phone with location services enabled. Sign in with your **Employee Code or username and password**. An unlinked Field Officer can sign in with a username for authorized operations, but has no personal duty to punch. Staff with access to more than one company choose the working company after sign-in. The web app offers **English / हिंदी**; the choice is remembered on this device.
 
-For personal attendance you need an active employee profile linked to your login, a current site-and-common-shift assignment, and a dated duty. A site geofence and usable location are also needed for a normal punch. Simply standing at the site does not create attendance.
+For personal attendance you need an active employee profile linked to your login, a current site-and-common-shift assignment, and a dated duty. Most employees also need to be inside the site's geofence with a usable location. Employees explicitly marked **Field Officer** may punch from outside that boundary, but still need fresh, accurate GPS, the enrolled phone and the correct duty window. Simply standing at the site does not create attendance.
 
 ## Find things on the phone
 
@@ -23,12 +23,14 @@ Read the site name, post, address, and start time. Tap **Check my location** onl
 
 ## Punch in and punch out
 
-1. At the assigned gate/post and within the allowed time, tap the large **Punch in** button. Allow location for the official site when the phone/browser asks. Keep the screen open while it says it is checking your position.
+1. At the assigned gate/post and within the allowed time, tap the large **Punch in** button. A Field Officer with remote-location attendance enabled may punch from another location. Allow location for the official site when the phone/browser asks. Keep the screen open while it says it is checking your position.
 2. Wait for **Attendance is confirmed**. Check the **Punches** tab for a confirmed/on-shift record. If it is waiting, saved, unknown, or rejected, it is **not** confirmed; read the displayed guidance.
-3. At the end of duty, while still at the site and within the allowed time, tap **Punch out**. Again wait for server confirmation. An ordinary punch-out does **not** certify a handover to the incoming guard; follow HHCIL's existing handover procedure.
+3. At the end of duty, while still at the site and within the allowed time, tap **Punch out**. A Field Officer may use the same remote-location rule as their punch-in. Again wait for server confirmation. An ordinary punch-out does **not** certify a handover to the incoming guard; follow HHCIL's existing handover procedure.
 4. If your punch-out window has closed, tell your supervisor. An authorized person may record an **exception punch-out** with your verified **actual departure date/time** and a reason. It is marked as an exception, not a GPS-confirmed punch-out.
 
 Completed duties show **worked hours**, calculated from accepted punch-in to punch-out. An open duty has no final total. These hours do not subtract breaks or apply payroll rules.
+
+If HR has marked you as an **internal employee** and you arrive after the company's configured grace period, the app asks **You are late** and requires a reason of at least 10 characters. Submit a truthful reason; the punch can still be accepted. If you exceed the company's monthly count or per-arrival duration, the completed day is provisionally **half-day** until HR approves your late arrival. Rejection keeps the half-day mark. HR's decision does not change your original punch times or worked hours. An offline punch still needs the normal staff review. Contact HR if the reason or status appears wrong; do not submit another punch to replace it.
 
 If a punch was missed or an accepted time is wrong, tell your supervisor the site, duty date, actual arrival/departure, and how those times can be checked. An authorized Field Officer or HR/Admin can record a reasoned correction; employees cannot do this themselves. Once saved, **Punches** shows the changed effective times and **Manually corrected — not GPS-verified**. This does not turn a manual time into a confirmed GPS punch. See [Attendance review and corrections](05-attendance-review.md).
 

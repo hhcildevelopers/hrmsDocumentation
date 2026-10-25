@@ -8,7 +8,7 @@ This page is for central administrators and authorized, site-granted Field Offic
 
 Open **Attendance review** and search for the site by name, client or city. Select it, then use the compact **date-range picker** in the attendance table to choose today, a preset range, or custom **from/to local work dates** (up to 31 days). Choose the **Offline status** filter for review records. The chosen site and work-date range apply to both tables; the status filter applies to the offline-decision table. For an overnight duty, use the date on which the shift **started**. Tables load from the server; you no longer need a separate **Load attendance** button.
 
-The **Daily attendance** card has its own single work-date field. It shows every planned dated duty at that site, including one with no session. **No attendance recorded** means no session was saved; it is not an automatic **Absent** decision, because leave has not been implemented. The session table below is a separate date-range view of sessions that actually exist.
+The **Daily attendance** card has its own single work-date field. It shows every planned dated duty at that site, including one with no session. **No attendance recorded** means no session was saved; it is not an automatic **Absent** decision. HR may separately record approved leave or a reasoned day classification. The session table below is a separate date-range view of sessions that actually exist.
 
 - **Shift attendance sessions**: employee, shift, status, punch-in/out times, **Worked** duration, distances from geofence center, and policy version.
 - **Offline punch decisions**: employee, in/out event, observed and received time, reported distance/accuracy, current review status, and any previous decision reason.
@@ -44,6 +44,12 @@ If the employee is **still working** and only the punch-in time needs correction
 The entered period must overlap the selected duty, finish in the past, run in order, and be no longer than **16 hours**. You may enter time outside the planned shift if it is justified and you confirm the deviation. For example, for an 08:00–20:00 duty, an actual 07:45–20:15 period is allowed with the reason and warning confirmation; an 18-hour period is not.
 
 The saved session uses these **effective** times for worked-hour totals. A manually entered side is labelled **not GPS-verified**. The original phone punch, GPS evidence, and earlier correction versions are never changed. Tap **History** on a duty to see who changed it, why, and the before/after times. The employee can refresh **Punches** to see the corrected result; the Client Portal site total also includes it and identifies how many sessions include manual time. These are elapsed hours, not a payroll decision.
+
+## Review late arrivals and punch locations
+
+In **Common → Leave policies**, an approved company policy can set late grace minutes, the number of late arrivals allowed per calendar month, the maximum late duration, and whether an arrival within those limits also needs approval. Internal employees arriving after grace must give a reason before punching in. The actual punch is accepted if its ordinary checks pass; exceeding either limit starts a pending HR review. In **Attendance review → Late arrivals**, select the site and work date, read the reason, then approve or reject with your own factual reason. You can reverse a decision later with a new reason. Pending or rejected late arrivals show a provisional/final **HD** after punch-out; approval restores the normal day code. Neither decision changes GPS evidence, actual hours, or pay automatically. Do not approve your own late arrival.
+
+From a daily attendance row, use **View punch locations** to see the original in/out coordinates and GPS accuracy. Authorized site-granted Field Officers may view only their granted historical company/site records. A Field Officer employee marked for remote-location attendance may punch outside the site's circle, but still needs an enrolled phone, a current duty, a valid punch window, and accurate GPS. A map link is only a location aid; it does not prove continuous presence. Clients do not receive precise coordinates or private late reasons. Approximate street-address lookup is not enabled until HHCIL approves a geocoding provider and its privacy/billing terms.
 
 ## Attendance-phone settings and recovery
 
