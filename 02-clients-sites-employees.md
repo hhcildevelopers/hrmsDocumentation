@@ -66,7 +66,7 @@ Enter the employee's first and last name, optional middle name/contact details, 
 
 After saving, the employee is active and the system creates dated duties automatically. Copy the displayed temporary password securely **once** and give it, with the Employee Code, to the employee privately. They must change the password at first sign-in. Do not put the password in a screenshot, ticket, spreadsheet, or chat group. If the page closes before you copy it, check whether the employee was created before trying again; ask Super Administrator to reset the password if needed.
 
-Super Administrator manages the group-wide **Common → Departments, Designations, Employment Types, Nationalities, and Worker Types** lists. HR Administrator can edit these only when explicitly granted Common-master edit permission. Field Officers can use active options but cannot edit them. Inactive options stay on older records; they cannot be chosen for a new employee.
+Super Administrator manages the group-wide **Common → Departments, Designations, Employment Types, Nationalities, Worker Types, Relationships, and Payment modes** lists. HR Administrator can edit these only when explicitly granted Common-master edit permission. Field Officers can use active onboarding options but cannot edit them. Inactive options stay on older records; they cannot be chosen for a new entry.
 
 For an employee that existed before this workflow, the profile page still supports linking an eligible existing account or creating a login from a saved, unlinked employee. Do not create a duplicate employee just to get a login. If an existing unlinked account is missing, ask Super Administrator to check its onboarding company or the Field Officer's company grant.
 

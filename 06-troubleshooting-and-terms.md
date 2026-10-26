@@ -28,6 +28,10 @@ For the meaning, likely cause, step-by-step fix, and HR/Admin action for each co
 | Document upload fails | Correct type, JPG/PNG/PDF format, 5 MB limit, online connection and permission. | Preview a valid file and retry. A passport photo must be JPG/PNG. |
 | Document Delete disabled | **Document → Delete** permission. | Ask a Super Administrator to review the permission; do not borrow another person's account. |
 | “Code already exists” | Group-wide client or employee code already in use. | Find the correct existing record or choose a genuinely new approved code. |
+| Leave menu missing | Employee's **Leave applicable** flag, linked login and current company. | Ask HR to review eligibility; do not use another employee's account. |
+| Leave approval blocked | Applied approved policy, correct assignment/calendar, opened CL/SL/PL balance and conflicting attendance. | HR checks the request details and fixes the source issue before deciding. A submitted request has not deducted a balance. |
+| Late punch shows half-day | Company late rule requires HR approval and the arrival is pending or rejected. | Keep the original punch; HR reviews **Attendance review → Late arrivals**. Worked hours do not change. |
+| Muster has `?` or cannot finalize | A duty or leave/day decision needs review, or the selected period has not ended. | HR resolves the source day, previews again, and finalizes only after all days are clear. See [Attendance reports](10-attendance-reports.md). |
 
 Admin form errors appear near the field and in an alert. When asking for help, give the page, company, site, employee/shift reference, time and exact message. Never send passwords, full ID/account numbers or unnecessary personal screenshots.
 
@@ -54,6 +58,10 @@ If a site is missing, contact your Hitech Group administrator. Do not ask for an
 | GPS accuracy | Phone-reported uncertainty in metres. Lower is more precise; it is not proof of physical presence. |
 | Attendance session | Server record opened by accepted punch-in and closed by accepted punch-out or an authorized exception. |
 | Worked hours | Elapsed accepted punch-in to punch-out time for a completed session. Breaks and payroll rules are not applied. |
+| Leave opening balance | HR's first recorded CL, SL or PL balance for an employee and leave year. Policy entitlement alone does not credit it. |
+| Leave approval | HR decision that deducts charged working days after policy, attendance and balance checks. A pending request does not deduct days. |
+| Attendance day code | HR-reviewed classification such as `P`, `HD`, `WO`, `H`, `AB`, `CO`, `CL`, `SL` or `PL`. It is not a paid-day or wage rule. |
+| Muster report version | Saved company/site-period attendance snapshot. If source records change, HR reopens and creates a new version; old downloads remain as saved. |
 | Provisional/offline punch | Phone-saved evidence that needs sync and possibly review. It is **not** confirmed attendance. |
 | Exception punch-out | Audited close of an open session at the verified actual departure time, without on-site punch-out GPS evidence. |
 | Document received / staff-reviewed | File uploaded / inspected by staff. Neither means KYC-provider or government identity verification. |

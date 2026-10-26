@@ -8,7 +8,7 @@ These records are more private than the ordinary employee list. Work in the **co
 
 Open **Personal**. This tab contains the basic employee profile and portal account, guardian relationship/name, addresses, background, contacts, Aadhaar and PAN. Select a relationship from Common; if an old value is marked legacy, ask HR to review it. Select the domicile from the India state/union-territory list, and choose one or more known languages (use Other for a custom language). Enter the real date of birth if known; do not invent an estimated date. Present and permanent addresses may match, but confirm that with the employee. Unknown optional fields may be left blank and completed later.
 
-The statutory-ID fields have format checks:
+Personal contains Aadhaar and PAN. The **Bank & salary pay** tab contains UAN, PF and ESIC details. These ID fields have format checks:
 
 | Field | What to enter | Avoid |
 | --- | --- | --- |
