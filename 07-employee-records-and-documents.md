@@ -19,7 +19,7 @@ Personal contains Aadhaar and PAN. The **Bank & salary pay** tab contains UAN, P
 
 Example PAN **format**: `ABCDE1234F` (a fictional pattern; do not save this as an employee's ID). The form can hide or show entered numbers while editing. Collect only details HHCIL has approved and verified through its own procedure. Entering a number here does **not** verify it with UIDAI, Surepass or another KYC provider. During development, use synthetic data only; live full identity-data collection needs HHCIL's consent, retention and security policy first.
 
-Employees open **Field Portal → Menu → My profile** to see their own read-only details, including their full ID and current bank account numbers. These values are private: do not share screenshots or leave the portal open on a shared phone. Another employee, a Field Officer, or a client cannot open this private record. If anything is wrong, contact HR; editing the phone screen is not supported.
+Employees open **Field Portal → Menu → My profile** to see their own read-only details, including their full ID and current bank account numbers. These values are private: do not share screenshots or leave the portal open on a shared phone. Other employees, Field Officers viewing someone else's record, and clients cannot open this private record. If anything is wrong, use **Request profile changes** on that page; HR reviews the request before the record changes. See [Employee self-service](11-employee-self-service.md).
 
 ## Bank account: make a new version
 
@@ -35,7 +35,7 @@ Add nominees with their percentage shares. Optional Aadhaar and blood group may 
 
 In **Bank & salary pay → Pay terms**, choose an effective date and an active Common payment mode. Monthly pay needs a **Pay scale on** choice: calendar days, scheduled working days, or fixed days such as 26. Per-day pay has no pay-scale basis. Older pay versions may say **Not specified**. Enter a positive gross rate for **As per employee**; leave it empty for **As per unit rate** until HHCIL approves those rules. Set applicable policy flags. **Save new version** retains earlier terms and must have a later effective date. These entries do not calculate payroll or issue a payslip. If HR cannot save, a Super Administrator should review `payroll.UPDATE`.
 
-The employee sees their own currently effective family, nomination and pay terms in **Field Portal → My profile**. Future-dated pay changes are not shown there before they take effect. The employee cannot edit these records; they should ask HR to correct an error.
+The employee sees their own currently effective family, nomination and pay terms in **Field Portal → My profile**. Future-dated pay changes are not shown there before they take effect. The employee cannot edit these records. Family, nominee and pay changes are outside the current profile-request form; ask HR to correct an error.
 
 ## Upload a document
 

@@ -11,7 +11,7 @@ For personal attendance you need an active employee profile linked to your login
 - **Home** shows the active duty first (including a night shift that started yesterday), otherwise a punchable duty or your next duty. It shows site, post, address, local time, status, and the main punch button above the map.
 - **Shifts** lists upcoming duties in order and past duties separately. Past duties have no punch button. If a shift is missing, tap **Refresh**, then ask HR or your supervisor to check the current assignment and working days.
 - **Punches** shows server attendance sessions, server review decisions, and punches saved on this phone. Choose a month and tap **Show history** to retrieve older server records. A saved-only punch on a different phone cannot appear until that phone syncs it.
-- **Menu** opens a side panel with your name, **My profile** (including **My documents**), and **Sign out**. Eligible employees also see **Leave** for requests and history. A permitted Field Officer can see **Collect documents**, **Transfer employees**, **Attendance corrections**, **Register employee**, and, if granted more than one company, company choices. The language button is at the top left. The bell currently says notifications are coming later; it does not deliver attendance alerts today.
+- **Menu** opens a side panel with your name, **My profile** (including **Request profile changes** and **My documents**), **Grievances**, and **Sign out**. Eligible employees also see **Leave** for requests and history. A permitted Field Officer can see **Collect documents**, **Transfer employees**, **Attendance corrections**, **Register employee**, and, if granted more than one company, company choices. The language button is at the top left. The bell at the top right opens your notice inbox and shows an unread count; it does not send push or attendance alerts.
 
 If Home says **Punch in opens at …**, wait until that time. If it says the shift can no longer be punched, contact the supervisor. Do not change your phone clock; the server checks the actual window. For a night shift, follow the date/time shown on the duty card, not just today's date.
 
@@ -53,6 +53,8 @@ Field Officers with transfer permission can open **Menu → Transfer employees**
 For read-only personal details and document uploads, see [Employee records and documents](07-employee-records-and-documents.md).
 
 For leave requests, balances and company holidays, see [Leave policies, requests and balances](09-leave-setup.md). Leave submission needs internet; it does not join the offline punch queue.
+
+For profile corrections, grievances and notices, see [Employee self-service](11-employee-self-service.md). These actions need internet and a login linked to your own employee record.
 
 ## If internet is unavailable
 

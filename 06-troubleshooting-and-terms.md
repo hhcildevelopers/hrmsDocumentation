@@ -30,6 +30,10 @@ For the meaning, likely cause, step-by-step fix, and HR/Admin action for each co
 | “Code already exists” | Group-wide client or employee code already in use. | Find the correct existing record or choose a genuinely new approved code. |
 | Leave menu missing | Employee's **Leave applicable** flag, linked login and current company. | Ask HR to review eligibility; do not use another employee's account. |
 | Leave approval blocked | Applied approved policy, correct assignment/calendar, opened CL/SL/PL balance and conflicting attendance. | HR checks the request details and fixes the source issue before deciding. A submitted request has not deducted a balance. |
+| Profile correction cannot be sent | A required field or matching uploaded document is missing, another request is pending, or the phone is offline. | Open **My profile → Request profile changes**, check the field errors, and upload evidence under **My documents** first. See [Employee self-service](11-employee-self-service.md). |
+| Profile request needs resubmission | The employee transferred companies while HR had not finished the request. | Start a new request for the current company; the new HR team cannot use the old company's document evidence. |
+| Grievance is due soon or overdue | The 24-hour resolution target is approaching or has passed. | Check the case history and use **Send reply** while it is open. For urgent issues, contact your supervisor directly as well. |
+| Bell is empty or a notice is missing | The inbox needs internet, the account is unlinked, or that employee was not in the saved recipient list. | Refresh the inbox online. HR checks the published notice's audience and withdrawal status. |
 | Late punch shows half-day | Company late rule requires HR approval and the arrival is pending or rejected. | Keep the original punch; HR reviews **Attendance review → Late arrivals**. Worked hours do not change. |
 | Muster has `?` or cannot finalize | A duty or leave/day decision needs review, or the selected period has not ended. | HR resolves the source day, previews again, and finalizes only after all days are clear. See [Attendance reports](10-attendance-reports.md). |
 
@@ -62,6 +66,9 @@ If a site is missing, contact your Hitech Group administrator. Do not ask for an
 | Leave approval | HR decision that deducts charged working days after policy, attendance and balance checks. A pending request does not deduct days. |
 | Attendance day code | HR-reviewed classification such as `P`, `HD`, `WO`, `H`, `AB`, `CO`, `CL`, `SL` or `PL`. It is not a paid-day or wage rule. |
 | Muster report version | Saved company/site-period attendance snapshot. If source records change, HR reopens and creates a new version; old downloads remain as saved. |
+| Profile-change request | Employee's proposed correction for HR review. The saved employee record changes only for fields HR approves. |
+| Grievance case | Identifiable concern sent by a linked employee to their company HR team. Replies and earlier resolution cycles remain in its history. |
+| Notice / inbox | In-app message published by HR to a saved list of employees. The bell shows unread notices; opening one records its first opened time. No phone delivery is guaranteed. |
 | Provisional/offline punch | Phone-saved evidence that needs sync and possibly review. It is **not** confirmed attendance. |
 | Exception punch-out | Audited close of an open session at the verified actual departure time, without on-site punch-out GPS evidence. |
 | Document received / staff-reviewed | File uploaded / inspected by staff. Neither means KYC-provider or government identity verification. |

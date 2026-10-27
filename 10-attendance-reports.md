@@ -1,6 +1,6 @@
 # 10. Attendance reports
 
-[← Handbook](README.md) · [Leave guide](09-leave-setup.md)
+[← Handbook](README.md) · [Leave guide](09-leave-setup.md) · [Next: employee self-service →](11-employee-self-service.md)
 
 The **Reports → Attendance** page lets an HR Administrator or Super Administrator view a company's attendance muster and save a report version. Select the correct company at the top of the Admin Portal first.
 
