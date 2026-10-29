@@ -4,6 +4,14 @@
 
 First choose the **correct company** in the Admin Portal. A client belongs to that company; its sites and employees' current assignments are checked against it. A site is where duty happens, and a post is the particular gate or position. You cannot make another company's record appear here by changing a filter.
 
+## Company and client business profiles
+
+A Super Administrator opens **Companies** and selects a company. Its **Company details** tab holds the legal name, address, contact and letter signatory details. **Allowance details** names the company's earning, deduction and reimbursement heads; **Other details** lists owners and managers. The **Document Bucket** holds private, versioned records such as the logo, authorized signature, registrations and licences. Check the chosen company before editing: a client, employee or letter must use its own company's identity.
+
+Open a client under **Clients** to see its **Business profile**, **Document Bucket**, contacts, sites and portal account. The profile shows its fixed parent company. A blank client statutory setting inherits the corresponding parent-company value; a client value overrides it. The screen shows the source of each setting. **Client identity and bank details do not inherit** from the company, so enter them separately when needed. PF, ESI, PT, bonus and overtime settings are saved for future use; entering them does not run payroll or calculate deductions.
+
+Business profiles are effective-dated. Use **View as of** and **Load date** to inspect an earlier version. To make a correction, load the latest version, set **Effective from**, and choose **Save new version**. The earlier version stays in history. Upload a new Document Bucket version when a logo, signature or registration changes; do not put private documents in a public link. Company identity, especially the signatory and current image files, is needed for [Formalities letter previews](12-formalities-letter-previews.md).
+
 ## Create a client and contact
 
 Go to **Clients → Create client**.
