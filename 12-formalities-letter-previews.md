@@ -2,7 +2,7 @@
 
 [← Handbook](README.md) · [Common Errors & Solutions](08-common-errors-and-solutions.md)
 
-The **Formalities letters** page currently lets authorized HR and Super Administrators prepare and review a **Parking Assistant appointment letter preview**. Every page of the PDF says **PREVIEW - NOT ISSUED**. **View** and **Download** let staff inspect that preview; they do not issue it to the employee. Employees and Client Portal users cannot see these previews. Offer letters, other appointment styles, formal issuance and payslips are planned for later.
+The **Formalities letters** page currently lets authorized HR and Super Administrators prepare and review a **Parking Assistant appointment letter preview**. Every page of the PDF says **PREVIEW - NOT ISSUED**. **View** beside **Generate preview** opens an unsaved PDF. A saved history row has its own **View** and **Download** actions. None of these actions issues a letter to the employee. Employees and Client Portal users cannot see these previews. Offer letters, other appointment styles, formal issuance and payslips are planned for later.
 
 ## Before you generate a preview
 
@@ -15,12 +15,13 @@ If **Formalities letters** is missing from the Admin menu, ask a Super Administr
 
 ## Generate and review
 
-1. Open **Formalities letters**. Search for the employee by name or code, then select the employee and the available **Parking Assistant appointment** style.
+1. Open **Formalities letters**. Search for the employee by name or code, then select the employee and the available **Parking Assistant appointment** style/version. Version 1 is the current development style; when later versions are approved, choose the one required for this preview.
 2. Choose the printed **Letter date**. Enter **Contract start**, **Duration (years)**, **Contract end**, and **Notice (days)**. If the end date differs from the date suggested by the duration, read the warning and verify the intended dates.
-3. Tick **I checked the contract dates, duration and notice period**, then choose **Generate preview**. The system checks the current employee, assignment, Company identity, images and monthly salary. A successful preview appears in **Generated preview history**.
-4. Choose **View** to inspect both PDF pages. Check the employee and Company names, client/site, dates, contract wording, letterhead, signatory and salary annexure. Choose **Download** only when an authorized HR review needs a copy. Keep the **PREVIEW - NOT ISSUED** label visible; do not send the draft as an issued appointment letter.
+3. Choose **View** beside **Generate preview** to inspect both pages before saving. Check the employee and Company names, client/site, dates, contract wording, letterhead, signatory and salary annexure. Closing this view discards its temporary browser copy; no history entry is made.
+4. Tick **I checked the contract dates, duration and notice period**, then choose **Generate preview**. The system checks the current employee, assignment, Company identity, images and monthly salary again. A successful preview appears in **Generated preview history**. Source details changed after View may appear differently in this saved preview.
+5. Use **View** on a history row to inspect its saved version, or **Download** only when an authorized HR review needs a copy. Keep the **PREVIEW - NOT ISSUED** label visible; do not send the draft as an issued appointment letter.
 
-The printed Letter date does not look up old employee or salary data. A **new** preview reads the records that are current when you generate it. An **older** history row opens with the values and template version saved for that preview, even if the employee, salary or Company details have changed since then. Generate a new preview after a correction; the old entry remains in history. Version 1 entries are marked **Older draft**.
+The printed Letter date does not look up old employee or salary data. **View** and a new **Generate preview** each read current records. An older history row opens with the values and template version saved for that preview, even if the employee, salary or Company details have changed since then. Generate a new preview after a correction; the earlier entry remains in history.
 
 ## Check the salary annexure
 
