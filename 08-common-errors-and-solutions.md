@@ -100,9 +100,9 @@ For the normal employee and HR steps, see [Employee self-service](11-employee-se
 | **Notice audience changed before publishing** | The selected employees, sites, links or company membership changed after HR previewed the audience. | HR selects **Preview audience** again, checks the count, sample and filters, then confirms publication. | HR publishes only after reviewing the new audience. Super Admin handles a multi-company notice; publication stores the final recipient list. |
 | **Notice cannot be corrected in place** | Published text is immutable. Withdrawal hides the old text from the employee inbox but keeps the publication history. | HR opens the notice, enters a withdrawal reason and publishes a corrected replacement. Employees can open the new notice when it appears. | Only authorized HR for a single-company notice or Super Admin for a multi-company notice may withdraw it. Do not describe availability as proof of phone delivery or reading. |
 
-## Formalities letter previews
+## Formalities letters
 
-For the normal HR steps, see [Formalities letter previews](12-formalities-letter-previews.md). These PDFs are drafts marked **PREVIEW - NOT ISSUED**; View and Download do not issue a letter.
+For the normal HR steps, see [Formalities letters](12-formalities-letter-previews.md). Preview PDFs are marked **PREVIEW - NOT ISSUED**. Only the separate **Issue letter** action creates a final employee-visible PDF.
 
 | What you see | Meaning and likely cause | What you should do | When to ask for help; HR/Admin action |
 | --- | --- | --- | --- |
@@ -113,6 +113,9 @@ For the normal HR steps, see [Formalities letter previews](12-formalities-letter
 | **Annexure amounts do not equal Gross Salary** | The displayed monthly earnings do not reconcile with the saved Gross Salary. | Compare Basic, DA, HRA, Special Allowance, Leave Wage and any nonzero extra earning. Do not include one-time Adjustment Arrear. | HR/payroll owner checks the salary source and saves a corrected version, then generates a new preview. |
 | **Unsaved View could not render / Historical preview unavailable** | A current Company image may be missing, or a saved template/image or the PDF layout may be unavailable. | For the unsaved View, check the selected Company and current images, then retry. For a history row, refresh history and retry its View; keep the history ID for support. | Admin/IT checks the relevant image, template version and render logs. Do not send an unreviewed PDF as an issued letter. |
 | **Contract dates differ from duration** | The end date entered by HR differs from the date calculated from start and duration. | Verify the written contract terms before ticking the confirmation box. | HR corrects the inputs and generates a new preview if the existing one is wrong. |
+| **Letter details changed since preview** | Employee, assignment, Company, salary or controlled images no longer match the saved preview. | Do not issue the old preview. Correct the source if needed, then generate and review a new preview. | HR checks all details and issues only the new reviewed entry. |
+| **Issue is unavailable** | Production issuance is disabled pending HHCIL approval and private storage, or local development explicitly disabled it. | Keep the saved preview for review. Do not send the preview as a final letter. | Admin/IT checks the release gate; HHCIL approves wording, signing authority and retention before production use. |
+| **Letter is missing from My letters** | No current issued letter exists, or HR voided or replaced an earlier copy. A preview is never shown here. | Refresh while online and check again. | HR checks issued history, the linked employee account, and any Void or Replace decision. |
 
 ## If the error is not listed
 

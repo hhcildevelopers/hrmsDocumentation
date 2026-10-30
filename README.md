@@ -19,7 +19,7 @@ This handbook explains what the HRMS currently does, in everyday language. It is
 | Set up leave, open balances, request or review leave, and handle late arrivals | [Leave policies, requests and balances](09-leave-setup.md) |
 | Preview, finalize and download attendance muster reports | [Attendance reports](10-attendance-reports.md) |
 | Request a profile correction, raise a grievance, or read/publish a notice | [Employee self-service](11-employee-self-service.md) |
-| Prepare and review an appointment letter draft | [Formalities letter previews](12-formalities-letter-previews.md) |
+| Preview, issue, replace or void an appointment letter | [Formalities letters](12-formalities-letter-previews.md) |
 
 ## Normal setup and attendance flow
 
@@ -31,7 +31,7 @@ This handbook explains what the HRMS currently does, in everyday language. It is
 6. An authorized reviewer uses **Attendance review** for offline punches, exceptional punch-outs, immediate reasoned corrections, daily decisions and late arrivals. The daily view includes duties with no recorded attendance. Effective in/out time appears as worked hours, with manual time clearly labelled; it is **not** a payroll calculation.
 7. For eligible employees, HR applies an approved company leave policy and opens each leave-year balance. The employee then requests leave in the Field Portal, and HR decides it in **Leave requests**. HR may preview and finalize a company-scoped muster in **Reports → Attendance** after unresolved days are reconciled.
 8. A linked employee can ask HR to correct personal details, send a grievance, and read notices from the Field Portal. HR reviews **Profile requests** and **Grievance desk** in the selected company and publishes messages under **Notices**.
-9. Authorized HR can prepare a **Parking Assistant appointment preview** in **Formalities letters** after checking the employee's active assignment, monthly salary, Company identity and contract terms. HR reviews both pages; the preview is not an issued letter.
+9. Authorized HR prepares a **Parking Assistant appointment preview** in **Formalities letters** after checking the employee's assignment, monthly salary, Company identity and contract terms. HR reviews both pages and separately issues the saved preview. The linked employee can then open the current letter in **My letters**.
 
 For example, a guard assigned to Site A, the 08:00–20:00 common shift, and Monday–Saturday will see a dated duty on those days. If transferred to Site B and the 20:00–08:00 shift, new duties follow the new assignment. Older attendance stays with Site A. If the guard is already punched in, the transfer waits until the Site A session is closed.
 
@@ -41,7 +41,7 @@ For example, a guard assigned to Site A, the 08:00–20:00 common shift, and Mon
 - The Field Portal is a mobile-friendly **web app**, not a native Android/iOS app yet. Location is requested for a check or punch. Continuous background location, geofence-exit alerts, automated no-show alerts, and two-person shift handover are **not live**.
 - Offline punches are provisional until the server accepts or an authorized reviewer approves them. A saved-on-phone message is not attendance confirmation.
 - Staff-reviewed documents are **not** Aadhaar, PAN, or other provider-verified identity documents. KYC-provider verification, payroll, payslips, and other future HR modules are not described here as live features.
-- Formalities currently supports Admin-only Parking Assistant **appointment previews and history**. PDFs are marked **PREVIEW - NOT ISSUED**. Employees and clients cannot view these drafts; issuing letters and other styles await HHCIL approval. See [Formalities letter previews](12-formalities-letter-previews.md).
+- Formalities has a local-development Parking Assistant preview and issuance baseline. Previews are marked **PREVIEW - NOT ISSUED** and stay with HR. Only the current issued letter appears in the linked employee's **My letters**; clients have no letter access. Production issuance and other styles await HHCIL's wording, signatory, retention and storage approval. See [Formalities letters](12-formalities-letter-previews.md).
 - Leave requests, late-arrival review, attendance reports, profile requests, grievances and notices have development baselines. HHCIL's policy/report approval and employee/HR acceptance of the self-service flows are still needed before live use. The muster day codes and worked hours are not a paid-day or salary calculation. Regular Field Officer site visits remain pending.
 - A common shift is a time pattern; an assignment is where and when a person should work; a dated duty is the particular day's plan; a confirmed punch is attendance evidence. None alone proves the person stayed at the post throughout the shift.
 

@@ -1,8 +1,8 @@
-# 12. Formalities letter previews
+# 12. Formalities letters
 
 [← Handbook](README.md) · [Common Errors & Solutions](08-common-errors-and-solutions.md)
 
-The **Formalities letters** page currently lets authorized HR and Super Administrators prepare and review a **Parking Assistant appointment letter preview**. Every page of the PDF says **PREVIEW - NOT ISSUED**. **View** beside **Generate preview** opens an unsaved PDF. A saved history row has its own **View** and **Download** actions. None of these actions issues a letter to the employee. Employees and Client Portal users cannot see these previews. Offer letters, other appointment styles, formal issuance and payslips are planned for later.
+The **Formalities letters** page lets authorized HR and Super Administrators prepare, review and issue a **Parking Assistant appointment letter**. **View** beside **Generate preview** opens an unsaved PDF. A saved preview remains marked **PREVIEW - NOT ISSUED** and is invisible to employees. HR must separately choose **Issue letter** on a saved, reviewed preview. Offer letters, other appointment styles and payslips are later work.
 
 ## Before you generate a preview
 
@@ -12,6 +12,8 @@ The **Formalities letters** page currently lets authorized HR and Super Administ
 4. Confirm the contract start and end dates, duration and notice period from the approved employment terms. The form does not derive these terms from attendance or the shift assignment.
 
 If **Formalities letters** is missing from the Admin menu, ask a Super Administrator to check your Formalities permission and company access. Do not use another person's account.
+
+The **Issue letter** action requires the Formalities **Approve** permission. Super Administrators receive this protected permission automatically. A Super Administrator must enable **Formalities letters → Approve** on the HR Administrator role before HR users can issue, replace, or void letters.
 
 ## Generate and review
 
@@ -39,4 +41,15 @@ If the salary check fails, review the employee's **Salary** entry or inherited *
 | Preview cannot open or render | Refresh the history once. If the same preview still fails, give Admin/IT the selected company, employee code and preview history ID; do not share full salary or identity numbers in a support message. |
 | Contract dates look wrong | Stop and confirm the written terms with HR. Generate a new preview with corrected inputs; the existing history row is retained. |
 
-HHCIL still needs to approve the wording, expanded annexure, appearance and signing authority before formal issuance is added. An appointment preview is not proof that a letter was delivered or accepted.
+HHCIL still needs to approve the wording, expanded annexure, appearance and signing authority before real-data issuance is enabled. An appointment preview is not proof that a letter was delivered or accepted.
+
+## Issue, replace or void a letter
+
+This workflow is available for **synthetic local development testing**. Production issuance remains unavailable until HHCIL approves the letter and secure storage.
+
+1. Open a saved preview in **Generated preview history** and check both pages. Choose **Issue letter** on that row. Confirm the printed **Letter date** and actual issue time in the dialog. The system checks current employee, assignment, Company identity, salary and images against the saved preview. If anything changed, create and review a new preview.
+2. After issue, use **Issued letter history** to view or download the final PDF. It no longer shows the preview mark. The linked employee sees the current letter under **Field Portal → Menu → My letters** and can view or download it.
+3. To correct a letter, generate a new preview, choose **Replace**, enter a clear reason and confirm. The old PDF stays in HR history but disappears from the employee's current letters.
+4. To cancel a current letter issued in error, choose **Void** and enter a reason. The employee loses portal access to it; HR retains the PDF and decision history. A copy already downloaded by someone cannot be recalled.
+
+The printed Letter date is different from the recorded issue timestamp. Issuing a letter does not prove the employee received or accepted it. The embedded signature image is not an electronic signature.
