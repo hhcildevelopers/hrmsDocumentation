@@ -48,8 +48,16 @@ HHCIL still needs to approve the wording, expanded annexure, appearance and sign
 This workflow is available for **synthetic local development testing**. Production issuance remains unavailable until HHCIL approves the letter and secure storage.
 
 1. Open a saved preview in **Generated preview history** and check both pages. Choose **Issue letter** on that row. Confirm the printed **Letter date** and actual issue time in the dialog. The system checks current employee, assignment, Company identity, salary and images against the saved preview. If anything changed, create and review a new preview.
-2. After issue, use **Issued letter history** to view or download the final PDF. It no longer shows the preview mark. The linked employee sees the current letter under **Field Portal → Menu → My letters** and can view or download it.
+2. After issue, use **Issued letter history** to view or download the original final PDF. It no longer shows the preview mark. The linked employee sees the current letter under **Field Portal → Menu → My letters**. Appointment and contract-extension letters first offer a marked review View and an Accept action; the employee's Download becomes available after acceptance. Notices keep their normal View and Download actions.
 3. To correct a letter, generate a new preview, choose **Replace**, enter a clear reason and confirm. The old PDF stays in HR history but disappears from the employee's current letters.
 4. To cancel a current letter issued in error, choose **Void** and enter a reason. The employee loses portal access to it; HR retains the PDF and decision history. A copy already downloaded by someone cannot be recalled.
 
-The printed Letter date is different from the recorded issue timestamp. Issuing a letter does not prove the employee received or accepted it. The embedded signature image is not an electronic signature.
+The printed Letter date is different from the recorded issue timestamp. Issuing a letter does not prove the employee received or accepted it. The embedded company signature image is not an electronic signature.
+
+## Accept an appointment or contract-extension letter
+
+1. In **My letters**, choose **View** and read the marked review copy. Then choose **Accept**.
+2. The dialog shows the current signature image from your Profile. If it is missing, use **Upload signature** to open the Profile document section and upload a JPG or PNG signature. A PDF signature document can be viewed but cannot be placed on the letter. Return to My letters and open Accept again.
+3. Read and tick the declaration, then choose **Accept**. The system records the acceptance and creates a separate signed PDF. **View** and **Download** then show that signed copy.
+
+If the dialog says the letter needs an updated signature layout, contact HR to create a new preview and replace the earlier local letter. A replacement letter needs its own acceptance. If HR voids a letter, it disappears from My letters. This in-app acceptance uses an uploaded signature image; it is not a cryptographic digital signature.
