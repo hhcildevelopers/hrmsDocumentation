@@ -25,7 +25,7 @@ The **Issue letter** action requires the Formalities **Approve** permission. Sup
 4. Tick the confirmation for the displayed fields, then choose **Generate preview**. The system checks current records again. A successful preview appears in **Generated preview history**. Details changed after View may appear differently in the saved preview, so open the saved copy too.
 5. Use **View** on a history row to inspect its saved version, or **Download** only when an authorized HR review needs a copy. Keep the **PREVIEW - NOT ISSUED** label visible; do not send the draft as an issued letter.
 
-The printed Letter date does not look up old employee or salary data. **View** and a new **Generate preview** each read current records. An older history row opens with its saved values and template version, even if those records later change. Generate a new preview after a correction; the earlier entry remains in history. Use **Load more** when the desired history row is not on the first page.
+The printed Letter date does not look up old employee or salary data. **View** and a new **Generate preview** each read current records. An older history row opens with its saved values and template version, even if those records later change. Generate a new preview after a correction; the earlier entry remains in history. Use the page controls below **Generated preview history** or **Issued letter history** to find older rows; the histories show 20 rows per page by default. Selecting an employee limits both histories to that employee.
 
 ## Edit reusable wording or create a Custom letter
 

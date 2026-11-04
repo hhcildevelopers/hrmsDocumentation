@@ -26,7 +26,7 @@ If the **Leave** menu is missing, ask HR to check your eligibility, account link
 
 ## Review requests (HR/Super Administrator)
 
-In the selected company, open **Leave requests**. The initial filter shows items **Awaiting HR**; change the status filter to see approved, rejected, revoked or transferred requests. Choose **Review** to read the dates, reason, charged days, current balance and decision history. Enter a separate reason of at least 10 characters before **Approve** or **Reject**. Staff cannot decide their own request or change their own balance.
+In the selected company, open **Leave requests**. The initial status is **Awaiting HR**; use **Status** to see pending, transfer-review, approved, rejected, revoked or all requests. Search by employee name or code, and use the page controls below the table for older requests. The search and status apply to all matching records, not only the visible page. Choose **Review** to read the dates, reason, charged days, current balance and decision history. Enter a separate reason of at least 10 characters before **Approve** or **Reject**. Staff cannot decide their own request or change their own balance.
 
 Approval rechecks the active policy, employee assignment, working days, holidays, overlapping leave, attendance evidence, any existing day classification and the opened balance. Only scheduled working days are deducted. If any check fails, resolve the source issue and reload the request; do not change attendance or create a second account to force approval. A request may need to be resubmitted if its policy, assignment or holiday snapshot changed.
 
