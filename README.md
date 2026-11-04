@@ -4,6 +4,10 @@ This handbook explains what the HRMS currently does, in everyday language. It is
 
 > All people, dates, codes, addresses, and coordinates below are **training examples**. Confirm real employee and site details before saving them.
 
+## Dates and times on screen
+
+Read-only dates appear as **DD-MM-YYYY** and recorded times as **hh:mm:ss AM/PM**. For example, `03-11-2026, 05:38:45 PM` is shown in India time. The screens do not add an `IST` suffix to each time. Date and time entry fields may look different depending on your browser; enter the requested date or time in the field rather than retyping a displayed value. A duty's work date remains the date on which its shift starts. Attendance correction and exception entry fields use the site's timezone, as explained in [Attendance review](05-attendance-review.md).
+
 ## Find your guide
 
 | Your work | Read |

@@ -39,7 +39,8 @@ Go to **Sites & posts → Create site**, select the client, and enter the actual
 | Address line 2 | `Near Sample Junction` | Optional landmark/building detail. |
 | City / State | `Ahmedabad` / `Gujarat` | Spell consistently for search and reporting. |
 | Postal code | `380001` | Enter the site's correct code, 4–12 characters. |
-| Timezone | `Asia/Kolkata` | A valid timezone name, not `IST` or `GMT+5:30`. It controls local shift dates and times. |
+
+The Admin site form sets a new site's timezone to `Asia/Kolkata` automatically and does not show a timezone field. Editing a site keeps its saved timezone. The timezone still controls local duty dates and shift rules; ask an administrator if a site outside India needs a different timezone.
 
 Open the site and choose **Add post**. Example: post code `MAIN_GATE`, name `Main gate guard`, optional description `Guard stationed at the main customer entrance`. Create a separate post for each independently staffed duty point. An active employee assignment or future duty can prevent deactivation/archiving. Review assignments before changing the site or post; do not delete one just to hide a scheduling problem.
 
