@@ -15,6 +15,10 @@ For personal attendance you need an active employee profile linked to your login
 
 If Home says **Punch in opens at …**, wait until that time. If it says the shift can no longer be punched, contact the supervisor. Do not change your phone clock; the server checks the actual window. For a night shift, follow the date/time shown on the duty card, not just today's date.
 
+## Field Officer: register an employee
+
+Open **Menu → Register employee** while online and choose the company where you have access to the destination site. Select **Manual registration** to enter the employee's details, or **Aadhaar-verified registration** when DigiLocker is available and the employee agrees to that separate check. For DigiLocker, enter the Aadhaar number, open the provider page, complete sharing there, return to this app and tap **Check verification status**. Review any suggested name, birth date, gender and present address before filling the remaining fields. HRMS matches only the last four Aadhaar digits. If the provider cannot complete, switch to Manual; no partial employee was created. The final save creates the employee, first duty and login together, and shows the temporary password once. See [Create an employee and first duty](02-clients-sites-employees.md#create-an-employee-and-first-duty) for every required field and the consent rules.
+
 ## Before duty: check the correct site
 
 Read the site name, post, address, and start time. Tap **Check my location** only when you want a fresh check. The phone asks for location permission. The screen then shows approximate GPS accuracy, straight-line distance to the site center, and whether the reading appears inside the configured boundary. The map can show directions after this check, but it does **not** draw the geofence circle. Showing directions sends the checked position to Google Maps. If the map is unavailable, the duty card and punch button can still work.

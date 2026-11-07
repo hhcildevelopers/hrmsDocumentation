@@ -19,6 +19,12 @@ Personal contains Aadhaar and PAN. The **Bank & salary pay** tab contains UAN, P
 
 Example PAN **format**: `ABCDE1234F` (a fictional pattern; do not save this as an employee's ID). The form can hide or show entered numbers while editing. Collect only details HHCIL has approved and verified through its own procedure. Entering a number here does **not** verify it with UIDAI, Surepass or another KYC provider. During development, use synthetic data only; live full identity-data collection needs HHCIL's consent, retention and security policy first.
 
+## Aadhaar verification status
+
+On a saved employee's **Personal** details, authorized staff can see the Aadhaar status and use **Verify KYC** when the provider is available. This is separate from entering the number and requires the employee's consent to verification. A successful **DigiLocker document match** means the shared document's last four Aadhaar digits matched the entered number. It does **not** establish that the other eight entered digits match. Do not describe an uploaded or staff-reviewed document as provider verified.
+
+An employee registered with the DigiLocker option should show the document match on their saved record without repeating verification. If the page briefly shows no status while loading, wait or refresh. If it still shows **KYC Pending**, check that the DigiLocker step actually completed in HRMS for this employee. Changing the saved Aadhaar number makes the earlier verification stale; a fresh check is then needed. Editing unrelated personal fields does not erase the match. See [Common Errors & Solutions](08-common-errors-and-solutions.md) before retrying or creating another employee.
+
 Employees open **Field Portal → Menu → My profile** to see their own read-only details, including their full ID and current bank account numbers. These values are private: do not share screenshots or leave the portal open on a shared phone. Other employees, Field Officers viewing someone else's record, and clients cannot open this private record. If anything is wrong, use **Request profile changes** on that page; HR reviews the request before the record changes. See [Employee self-service](11-employee-self-service.md).
 
 ## Bank account: make a new version
