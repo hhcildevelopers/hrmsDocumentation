@@ -83,7 +83,7 @@ Super Administrator manages the group-wide **Common → Departments, Designation
 
 For an employee that existed before this workflow, the profile page still supports linking an eligible existing account or creating a login from a saved, unlinked employee. Do not create a duplicate employee just to get a login. If an existing unlinked account is missing, ask Super Administrator to check its onboarding company or the Field Officer's company grant.
 
-Open the saved employee's tabs for private profile, documents, attendance, devices, and assignment history according to your permissions. The sensitive details and files are explained in [Employee records and documents](07-employee-records-and-documents.md). A transfer uses **Assignments → Transfer / change shift** and needs a reason. If attendance is open, the new duty waits until punch-out at the old site; historical attendance stays there.
+Open the saved employee's tabs according to your permissions. On **Personal**, HR can change the employee profile and identity/address fields with one **Save Personal** action. **Other details**, **Statutory & bank**, **Salary**, documents and operational tabs keep their own actions. The sensitive details and files are explained in [Employee records and documents](07-employee-records-and-documents.md). A transfer uses **Assignments → Transfer / change shift** and needs a reason. If attendance is open, the new duty waits until punch-out at the old site; historical attendance stays there.
 
 ## Assign the employee to a site, shift and weekdays
 
