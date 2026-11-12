@@ -4,7 +4,7 @@
 
 This page is for employees and Field Officers marking **their own** attendance. Use the official Field Portal link from Hitech Group on a phone with location services enabled. Sign in with your **Employee Code or username and password**. An unlinked Field Officer can sign in with a username for authorized operations, but has no personal duty to punch. Staff with access to more than one company choose the working company after sign-in. The web app offers **English / हिंदी**; the choice is remembered on this device.
 
-For personal attendance you need an active employee profile linked to your login, a current site-and-common-shift assignment, and a dated duty. Most employees also need to be inside the site's geofence with a usable location. Employees explicitly marked **Field Officer** may punch from outside that boundary, but still need fresh, accurate GPS, the enrolled phone and the correct duty window. Simply standing at the site does not create attendance.
+For personal attendance you need an active employee profile linked to your login, a current site-and-common-shift assignment, and a dated duty. The site may offer GPS, Site QR, or Office Wi-Fi. The phone shows only the methods allowed for your duty. Employees explicitly marked **Field Officer** keep their separate remote-location GPS rule. Every method still requires the enrolled phone and correct duty window. Simply standing at the site does not create attendance.
 
 ## Find things on the phone
 
@@ -27,9 +27,11 @@ Read the site name, post, address, and start time. Tap **Check my location** onl
 
 ## Punch in and punch out
 
-1. At the assigned gate/post and within the allowed time, tap the large **Punch in** button. A Field Officer with remote-location attendance enabled may punch from another location. Allow location for the official site when the phone/browser asks. Keep the screen open while it says it is checking your position.
+Choose one of the methods shown on the duty card. **GPS** requests a fresh location inside the site boundary. **Site QR** opens the camera; scan the current poster while at the site. The server also requires a valid site GPS fix or the configured office network, so a copied poster alone will not work. **Office Wi-Fi** works only when the backend sees the site's configured public gateway IP. The browser cannot confirm the network name; VPN or shared-network routing can affect this check. QR and Wi-Fi require internet and use the server's receipt time. You may use different enabled methods for punch-in and punch-out.
+
+1. At the assigned gate/post and within the allowed time, tap an available **Punch in** method. A Field Officer with remote-location attendance enabled may punch from another location. Allow camera or location access when the selected method requests it. Keep the screen open until the server responds.
 2. Wait for **Attendance is confirmed**. Check the **Punches** tab for a confirmed/on-shift record. If it is waiting, saved, unknown, or rejected, it is **not** confirmed; read the displayed guidance.
-3. At the end of duty, while still at the site and within the allowed time, tap **Punch out**. A Field Officer may use the same remote-location rule as their punch-in. Again wait for server confirmation. An ordinary punch-out does **not** certify a handover to the incoming guard; follow HHCIL's existing handover procedure.
+3. At the end of duty, while still at the site and within the allowed time, choose an available **Punch out** method. A Field Officer may use the same remote-location rule as their punch-in. Again wait for server confirmation. An ordinary punch-out does **not** certify a handover to the incoming guard; follow HHCIL's existing handover procedure.
 4. If your punch-out window has closed, tell your supervisor. An authorized person may record an **exception punch-out** with your verified **actual departure date/time** and a reason. It is marked as an exception, not a GPS-confirmed punch-out.
 
 Completed duties show **worked hours**, calculated from accepted punch-in to punch-out. An open duty has no final total. These hours do not subtract breaks or apply payroll rules.
@@ -64,7 +66,7 @@ For an issued appointment or contract-extension letter, open **Menu → My lette
 
 ## If internet is unavailable
 
-The **No internet** banner means the server has **not confirmed** any new punch. In limited conditions, the phone may offer **Save punch in on phone** or **Save punch out for review**. This requires a fresh on-site GPS reading and a still-valid, previously downloaded shift/policy bundle. Keep the already signed-in page open; after closing/reloading it, you may need to reconnect and sign in before using attendance. Browser storage is not guaranteed to survive clearing data, device loss, or reinstalling the app.
+The **No internet** banner means the server has **not confirmed** any new punch. QR and Wi-Fi cannot be used offline. In limited conditions, the phone may offer **Save punch in on phone** or **Save punch out for review** using GPS. This requires a fresh on-site GPS reading and a still-valid, previously downloaded shift/policy bundle. A bundle issued before site attendance settings changed goes to human review rather than automatic confirmation. Keep the already signed-in page open; after closing/reloading it, you may need to reconnect and sign in before using attendance. Browser storage is not guaranteed to survive clearing data, device loss, or reinstalling the app.
 
 When connectivity returns, open **Punches** and tap **Sync punches** if needed. Status meanings:
 

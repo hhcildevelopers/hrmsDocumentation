@@ -44,7 +44,15 @@ The Admin site form sets a new site's timezone to `Asia/Kolkata` automatically a
 
 Open the site and choose **Add post**. Example: post code `MAIN_GATE`, name `Main gate guard`, optional description `Guard stationed at the main customer entrance`. Create a separate post for each independently staffed duty point. An active employee assignment or future duty can prevent deactivation/archiving. Review assignments before changing the site or post; do not delete one just to hide a scheduling problem.
 
-## Configure the geofence/tracking policy
+## Configure attendance methods and the geofence
+
+Open **Attendance & Policy** on the site page. GPS is enabled for existing sites. Admin/HR staff with site-update permission can also enable **Site QR** or **Office Wi-Fi**. At least one usable method must remain enabled. **Biometric** is marked Coming soon and cannot be used yet. These settings take effect for new punches; earlier attendance stays as recorded.
+
+For QR, print the site poster and place it where staff can scan it. The same QR works for all posts at that site, but the employee must still have the correct assignment and duty. A scan also needs either a valid site GPS reading or the configured office network. If the poster is lost or copied, choose **Regenerate**, confirm, and replace the old printed posters immediately.
+
+For Office Wi-Fi, enter the site's **public gateway IP**. **Detect my public IP** can fill the IP seen by the HRMS backend while you are on that network; check it before saving. The SSID and BSSID fields help identify the intended network, but a browser cannot verify them. VPNs and shared gateways can appear to use the same public IP. Ask IT to configure the backend's trusted proxy before enabling IP-based attendance. Test from a real phone on the intended network.
+
+The geofence and tracking policy below remains the source of GPS proof, including QR punches that use GPS.
 
 On the site page, choose **Set policy** or **Create new version**. This is the circular site boundary used by GPS attendance. A new version takes effect immediately; old versions remain in history.
 
