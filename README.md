@@ -24,6 +24,7 @@ Read-only dates appear as **DD-MM-YYYY** and recorded times as **hh:mm:ss AM/PM*
 | Preview, finalize and download attendance muster reports | [Attendance reports](10-attendance-reports.md) |
 | Request a profile correction, raise a grievance, or read/publish a notice | [Employee self-service](11-employee-self-service.md) |
 | Preview, edit, issue or accept a Formalities letter | [Formalities letters](12-formalities-letter-previews.md) |
+| Enable or review duty-route tracking | [Duty-route tracking pilot](13-duty-route-tracking.md) |
 
 ## Normal setup and attendance flow
 
@@ -42,11 +43,12 @@ For example, a guard assigned to Site A, the 08:00–20:00 common shift, and Mon
 ## What is and is not available
 
 - The Admin Portal is company-aware. Super Administrators can work across active companies; other staff need a company grant. The Client Portal belongs to its linked client and shows read-only completed worked-hour totals for that client's sites.
-- The Field Portal is a mobile-friendly **web app**, not a native Android/iOS app yet. Location is requested for a check or punch. Continuous background location, geofence-exit alerts, automated no-show alerts, and two-person shift handover are **not live**.
+- The Field Portal is a mobile-friendly **web app**, not a native Android/iOS app yet. It requests location for GPS checks and punches. If HR enables the separate duty-route pilot for an employee, it also samples locations during an open duty while the page is visible. Locked-phone/background tracking, geofence-exit alerts, automated no-show alerts, and two-person shift handover are **not live**. See [Duty-route tracking](13-duty-route-tracking.md).
 - Offline punches are provisional until the server accepts or an authorized reviewer approves them. A saved-on-phone message is not attendance confirmation.
 - Staff-reviewed documents are **not** provider-verified identity documents. Optional DigiLocker Aadhaar document matching is available in the development onboarding baseline when configured; it compares only the last four digits of the entered number. It does not verify the other eight digits. Payroll and payslips remain later work.
 - Formalities has eight supplied default styles, reusable edited versions and named Custom letters in its development baseline. Previews are marked **PREVIEW - NOT ISSUED** and stay with HR. Only current issued letters appear in the linked employee's **My letters**; clients have no letter access. Production issuance and each style's real use await HHCIL's wording, signing-authority, retention and storage approval. See [Formalities letters](12-formalities-letter-previews.md).
 - Leave requests, late-arrival review, attendance reports, profile requests, grievances and notices have development baselines. HHCIL's policy/report approval and employee/HR acceptance of the self-service flows are still needed before live use. The muster day codes and worked hours are not a paid-day or salary calculation. Regular Field Officer site visits remain pending.
+- Duty-route tracking is an HR-enabled development pilot, off for each employee until authorized HR enables it. It records reported points and gaps, not a verified travelled path or attendance decision. Real employee monitoring needs HHCIL's notice, access and retention approval.
 - A common shift is a time pattern; an assignment is where and when a person should work; a dated duty is the particular day's plan; a confirmed punch is attendance evidence. None alone proves the person stayed at the post throughout the shift.
 
 ## Before a real-site pilot

@@ -67,9 +67,9 @@ On the site page, choose **Set policy** or **Create new version**. This is the c
 | Radius (m) | `150` | Circle around center; 50–5,000 m. A tiny radius may reject genuine employees because GPS is uncertain. |
 | Required accuracy (m) | `50` | Maximum uncertainty accepted for a punch; 5–500 m. Smaller means stricter, not better phone GPS. |
 | Location max age (seconds) | `120` | Maximum age of an observed position; 15–900 seconds. |
-| Reporting interval (minutes) | `5` | Choose only 5, 10, 15, or 20. This setting is for later tracking workflows; it does **not** enable live tracking today. |
-| Stale after (minutes) | `10` | 10–120; must be at least **twice** the reporting interval. Example: interval 20 needs stale-after at least 40. Later tracking use; not a current alert. |
-| Outside dwell (seconds) | `120` | 30–900; planned tracking threshold. It does **not** make the current portal alert on site exits. |
+| Reporting interval (minutes) | `5` | Choose only 5, 10, 15, or 20. The duty-route tracking pilot uses this interval when HR has enabled tracking for an employee. Setting the interval alone does **not** turn tracking on. |
+| Stale after (minutes) | `10` | 10–120; must be at least **twice** the reporting interval. Example: interval 20 needs stale-after at least 40. This does not create a current alert. |
+| Outside dwell (seconds) | `120` | 30–900; reserved for later site-exit rules. It does **not** make the current portal alert on site exits. |
 
 For a punch to pass the location test, the server checks that **distance from center + reported GPS accuracy ≤ radius**, as well as the maximum-accuracy and age rules. Example: with a 150 m radius, a phone 90 m from center with 40 m uncertainty can pass the distance check (`90 + 40 = 130`). At 120 m with 40 m uncertainty, it cannot (`160 > 150`), even if the map appears to show the employee inside. Time, current assignment, account, duty, and phone checks also apply. **Use my location** needs HTTPS or localhost and gives a suggestion, not proof that the pin is correct.
 

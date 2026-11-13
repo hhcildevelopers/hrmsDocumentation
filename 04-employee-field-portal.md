@@ -90,6 +90,8 @@ Do not tell your supervisor “I punched successfully” if the phone says saved
 - **Different phone/browser:** sign in, check the allowance, and use **Use this phone for attendance** after syncing old-phone evidence if possible. If the allowance is exhausted or evidence is missing, ask HR or your supervisor; creating another user is not the solution.
 - **No duty / wrong duty:** ask HR or your supervisor to check the linked profile, current assignment, common shift, working days, and site policy. Routine duties are created automatically; you do not need a planner to publish them.
 
-## Privacy and current limit
+## Duty-route tracking pilot
 
-The present field web portal asks for a **foreground** location when you choose **Check my location** or a punch. This release does **not** continuously track you in the background or raise automatic geofence-exit alerts. HHCIL must communicate any later tracking-policy change before it is introduced. The map/distance is guidance; only a server-confirmed decision counts as current attendance.
+HR can enable a separate duty-route tracking switch for an employee. It is off by default. When enabled, the Home screen shows **Duty route tracking** status after an accepted punch-in. While this page remains open and visible, the phone reports locations at the site's interval. **Last point** means the last upload the server accepted. If the page is hidden, the phone is locked, or GPS is unavailable, the route can have gaps. A missing route point does not cancel a valid punch, and route points are not payroll or attendance evidence.
+
+Tracking stops when the open duty ends, HR disables it, you sign out, or the duty's tracking deadline passes. You can see your status, but this pilot does not show your route history in the Field Portal. Read [Duty-route tracking](13-duty-route-tracking.md) for the full steps and privacy limits. HHCIL must communicate and approve the real-employee monitoring procedure before using this pilot with staff. The portal does **not** track continuously in the background or raise automatic geofence-exit alerts. Only a server-confirmed punch counts as attendance.
